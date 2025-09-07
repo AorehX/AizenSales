@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import {RouterOutlet, RouterLink, RouterLinkActive} from "@angular/router";
+import { RouterOutlet, RouterLink } from "@angular/router";
+
+
+
 
 
 @Component({
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
   selector: 'app-navi',
-  styleUrl: './navi.scss',
-  templateUrl: './navi.html'
+  imports: [RouterOutlet, RouterLink],
+  templateUrl: './navi.html',
+  styleUrl: './navi.scss'
 })
 
 
-export class Navi {}
+export class Navi {
+
+}

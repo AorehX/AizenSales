@@ -1,10 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { Navi } from "./navi/navi";
-import { Footer } from "./footer/footer";
+import {RouterOutlet} from '@angular/router';
+import {Home} from './home/home';
+import {Navi} from './navi/navi';
+import {Footer} from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [Navi, Footer],
+  imports: [
+    RouterOutlet,
+    Home,
+    Navi,
+    Footer
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
