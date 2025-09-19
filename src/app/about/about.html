@@ -1,1 +1,132 @@
-<p>about works!</p>
+<!-- features/about/pages/about/about.component.html -->
+<div class="about-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>About Aizen</h1>
+                <p>Your trusted partner in finding the perfect home. We're dedicated to making your real estate dreams a
+                    reality with expertise, integrity, and personalized service.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content">
+        <div class="container">
+            <div class="section-title">
+                <h2>Who We Are</h2>
+                <p>Aizen Real Estate has been connecting people with their dream properties for over a decade, building
+                    lasting relationships through trust and excellence.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Your Real Estate Success Story Starts Here</h3>
+                    <p>Founded with a vision to revolutionize the real estate experience, Aizen combines cutting-edge
+                        technology with personalized service to deliver exceptional results for our clients.</p>
+
+                    <p>Whether you're buying your first home, selling a cherished property, or looking for the perfect
+                        rental, our team of experienced professionals is committed to guiding you through every step of
+                        the process with transparency, expertise, and genuine care.</p>
+
+                    <p>We believe that real estate is not just about properties—it's about people, dreams, and building
+                        communities where families can thrive and businesses can flourish.</p>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80"
+                        alt="Modern real estate office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Mission & Vision</h2>
+                <p>Driven by purpose, guided by values</p>
+            </div>
+
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To provide exceptional real estate services that exceed expectations, making property
+                        transactions seamless, transparent, and rewarding for every client we serve.</p>
+                </div>
+
+                <div class="mv-card">
+                    <div class="icon">🌟</div>
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted and innovative real estate platform, empowering people to make informed
+                        property decisions while building stronger communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" *ngFor="let stat of stats; let i = index">
+                    <h3 class="stat-value" [attr.data-index]="i">0</h3>
+                    <p>{{ stat.label }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+                <p>Experienced professionals dedicated to your success</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card" *ngFor="let member of teamMembers">
+                    <div class="team-avatar">{{ member.avatar }}</div>
+                    <h4>{{ member.name }}</h4>
+                    <div class="role">{{ member.role }}</div>
+                    <p>{{ member.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Aizen?</h2>
+                <p>What sets us apart in the real estate industry</p>
+            </div>
+
+            <div class="features-grid">
+                
+                <div class="feature-card" *ngFor="let feature of features">
+                    <div class="feature-icon">{{ feature.icon }}</div>
+                    <h4>{{ feature.title }}</h4>
+                    <p>{{ feature.description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Let's turn your real estate dreams into reality. Contact us today for a personalized consultation.
+                </p>
+                <button class="cta-button" (click)="navigateToContact()">Get Started Today</button>
+            </div>
+        </div>
+    </section>
+</div>

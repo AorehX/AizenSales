@@ -1,0 +1,71 @@
+<!-- features/admin/components/admin-layout/admin-layout.component.html -->
+<div class="admin-layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" [class.sidebar-collapsed]="!isSidebarOpen">
+        <!-- Logo Section -->
+        <div class="sidebar-header">
+            <div class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text" *ngIf="isSidebarOpen">Aizen Admin</span>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+            <li *ngFor="let item of menueItems" class="nav-item">
+                <a (click)="navigateTo(item.route)" class="nav-link" [class.active]="item.active">
+                    <span class="nav-icon">{{item.icon}}</span>
+                    <span class="nav-label" *ngIf="isSidebarOpen">{{item.label}}</span>
+                </a>
+
+                <!-- Submenu for Properties -->
+                <ul *ngIf="item.submenue && item.active && isSidebarOpen" class="submenu">
+                    <li *ngFor="let subItem of item.submenue">
+                        <a (click)="navigateTo(subItem.route)" class="submenu-link">
+                            {{subItem.label}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- User Section -->
+        <div class="user-section" *ngIf="isSidebarOpen">
+            <div class="user-info">
+                <div class="user-avatar">👨‍💼</div>
+                <div class="user-details">
+                    <p class="user-name">{{currentUseer}}</p>
+                    <p class="user-role">Administrator</p>
+                </div>
+            </div>
+            <button (click)="logOut()" class="logout-btn">
+                🚪 Logout
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-content" [class.main-content-expanded]="!isSidebarOpen">
+        <!-- Top Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <button (click)="toGGleSidebar()" class="sidebar-toggle">
+                    <span>☰</span>
+                </button>
+                <h1 class="page-title">Admin Dashboard</h1>
+            </div>
+
+            <div class="header-right">
+                <div class="header-actions">
+                    <button class="notification-btn">🔔</button>
+                    <button class="settings-btn">⚙️</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <main class="page-content">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>[=]

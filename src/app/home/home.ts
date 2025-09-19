@@ -7,6 +7,7 @@ import { NgOptimizedImage } from '@angular/common';
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
+
 export class Home {
   //Sample image for home intro
   imageSample_1: string = '/sample_1.jpg';
