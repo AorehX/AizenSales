@@ -15,5 +15,12 @@ export class Home {
   imageSample_3: string = '/sample_3.jpg';
   //#####################################//
 
+  isRegister: boolean = true;
+
+  registerBtn() {
+    this.isRegister = !this.isRegister;
+  }
+
+  img: string = '/public/AizenSales/public/Austin_Texas_A/A.jpg'
 
 }

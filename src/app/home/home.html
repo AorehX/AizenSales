@@ -27,63 +27,69 @@
 
 <div class="line"></div>
 
+<!--<img ngSrc="{{img}}" alt="" width="320" height="320">-->
 
 <div class="site-info">
-  <div class="logForm">
-    <form action="">
-      <label for="text">User name</label> <br />
-      <input type="text" placeholder="Clark" required />
-      <label for="password">Password</label> <br />
-      <input type="password" placeholder="password" required />
-    </form>
-
-    <input type="checkbox">
-
-    <div class="login-buttons">
-      <button>Log in</button>
-      <button>Sign up</button>
-    </div>
-  </div>
-
-  <div class="register-form">
-    <form action="" method="post">
-      <label for="text">First name</label> <br />
-      <input type="text" id="text" placeholder="Clark" required />
-      <label for="text">Last name</label> <br />
-      <input type="text" id="text" placeholder="Tim" required />
-      <label for="text">Email address</label> <br />
-      <input type="text" id="text" placeholder="example@email.com" required />
-      <label for="password">Password</label> <br />
-      <input type="password" id="password" placeholder="password" required />
-      <label for="password">Password</label> <br />
-      <input type="password" id="password" placeholder="password" required />
-
-      <p>
-        At least 8 characters <br />
-        Mix of numbers and letters
-      </p>
-
-    </form>
-
-    <div class="form-buttons">
-      <button>Sign up</button>
+  <div class="logForm-container">
+    @if (isRegister){
+    <div class="logForm">
+      <form action="">
+        <label for="text">User name</label> <br />
+        <input type="text" placeholder="Clark" required />
+        <label for="password">Password</label> <br />
+        <input type="password" placeholder="password" required />
+      </form>
+      <input type="checkbox">
+      <div class="login-buttons">
+        <button>Log in</button>
+        <button (click)="registerBtn()">Sign up</button>
+      </div>
     </div>
 
-  </div>
+    } @else {
+    <div class="register-form">
 
-  <!--  <button>Sign up</button>-->
+      <form action="" method="post">
+        <label for="text">First name</label> <br />
+        <input type="text" id="text" placeholder="Clark" required /> <br>
+        <label for="text">Last name</label> <br />
+        <input type="text" id="text" placeholder="Tim" required /> <br>
+        <label for="text">Email address</label> <br />
+        <input type="text" id="text" placeholder="example@email.com" required /> <br>
+        <label for="password">Password</label> <br />
+        <input type="password" id="password" placeholder="password" required /> <br>
+        <label for="password">Password</label> <br />
+        <input type="password" id="password" placeholder="password" required /> <br>
+
+        <p>
+          At least 8 characters <br />
+          Mix of numbers and letters
+        </p>
+
+      </form>
+
+      <div class="form-buttons">
+        <button>Sign up</button>
+      </div>
+    </div>
+    }
+
+
+  </div>
 
   <div class="sample-container">
     <div class="sample-image">
       <img ngSrc="/sample-intro.webp" alt="" width="513" height="416" />
     </div>
   </div>
+
 </div>
 
 <div class="home-container">
   <div class="home-text">
-    <h2>Find a local home you can afford <br> <span>Answer a few question, we will find a home to match your
-        budget.</span></h2>
+    <h2>Find a local home you can afford </h2>
+    <p>Answer a few question, we will find a home to match your
+      budget.</p>
   </div>
 
   <div class="home-intro">
@@ -95,7 +101,7 @@
     </div> -->
   </div>
 
-  <div class="home-samples">
+  <div class="home-samples-container">
 
     <div class="container">
       <h4>Aizen affordable homes</h4>
@@ -138,18 +144,15 @@
               <p>APR</p>
             </div>
           </div>
-
         </div>
-
       </div>
 
       <div class="intro-button">
         <button>Let's get started!</button>
       </div>
-
     </div>
 
-    <div class="sample-containers">
+    <div class="sample-image-containers">
 
       <div class="samples">
         <img ngSrc="/sample-1.jpg" alt="" width="320" height="210" />
@@ -168,8 +171,6 @@
     </div>
 
   </div>
-
-  <div class="samples"></div>
 </div>
 
 <div class="info-container">
