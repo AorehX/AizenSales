@@ -6,7 +6,6 @@
 }
 
 .parent-container {
-
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
@@ -32,7 +31,6 @@
 }
 
 nav {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,35 +70,6 @@ nav {
     }
 }
 
-// .navigation-links {
-
-//     ul {
-//         gap: 10px;
-//         display: flex;
-//         flex-wrap: wrap;
-//         margin: 5px;
-//         font-size: 18px;
-//         align-content: center;
-//         justify-content: center;
-//         transition: all 0.5s ease;
-//     }
-
-//     ul li:hover {
-//         color: #007bff;
-//         text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
-//         box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-//     }
-
-//     ul li {
-//         list-style: none;
-//     }
-
-//     ul a {
-//         text-decoration: none;
-//         color: #000;
-//     }
-// }
-
 
 /* Mobile */
 @media (max-width: 480px) {
@@ -136,10 +105,10 @@ nav {
             border-radius: 8px;
             background: white;
             transform-origin: top right;
-            opacity: 2;
+            opacity: 0;
             visibility: hidden;
             transform: scale(0.95);
-            transition: transform 150ms ease-out, opacity 150ms ease-out, visibility 150ms;
+            transition: transform 150ms ease, opacity 150ms ease, visibility 150ms;
 
             ul {
                 list-style: none;
@@ -150,7 +119,6 @@ nav {
                     a {
                         display: block;
                         padding: 10px 16px;
-                        margin: 0 auto;
                         text-decoration: none;
                         color: inherit;
 
@@ -206,10 +174,10 @@ nav {
             border-radius: 8px;
             background: white;
             transform-origin: top right;
-            opacity: 2;
+            opacity: 0;
             visibility: hidden;
             transform: scale(0.95);
-            transition: transform 150ms ease-out, opacity 150ms ease-out, visibility 150ms;
+            transition: transform 150ms ease, opacity 150ms ease, visibility 150ms;
 
             ul {
                 list-style: none;
@@ -220,7 +188,7 @@ nav {
                     a {
                         display: block;
                         padding: 10px 16px;
-                        margin: 0 auto;
+                        
                         text-decoration: none;
                         color: inherit;
 

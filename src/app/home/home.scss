@@ -122,12 +122,12 @@
   }
 
   .home-text {
-      h2 {
-        margin: 10px;
-          padding: 8px;
-          margin-bottom: 10px;
-          text-align: center;
-      }
+    h2 {
+      margin: 10px;
+      padding: 8px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
   }
 
   .sample-image img {
@@ -412,6 +412,30 @@
 
 /* Mobile */
 @media (max-width: 480px) {
+  .hero-section {
+    background-image: url('https://res.cloudinary.com/zone0/image/upload/hero-otc_dstalz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  .company-name {
+    margin-bottom: 10px;
+
+    h3 {
+      color: blueviolet;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: lightblue;
+    }
+
+    span {
+      color: #ffffff;
+    }
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -471,6 +495,30 @@
 
 /* Extra Small Devices */
 @media (min-width: 481px) and (max-width: 767px) {
+  .hero-section {
+      background-image: url('https://res.cloudinary.com/zone0/image/upload/hero-otc_dstalz.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+    }
+  
+    .company-name {
+      margin-bottom: 10px;
+  
+      h3 {
+        color: blueviolet;
+      }
+  
+      h2 {
+        font-size: 30px;
+        color: lightblue;
+      }
+  
+      span {
+        color: #ffffff;
+      }
+    }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -510,15 +558,39 @@
     flex-wrap: wrap;
   }
 
-    .logForm-container {
-      display: flex;
-      flex-direction: column;
-    }
+  .logForm-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Small Tablets */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .hero-section {
+      background-image: url('https://res.cloudinary.com/zone0/image/upload/hero-otc_dstalz.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+    }
+  
+    .company-name {
+      margin-bottom: 10px;
+  
+      h3 {
+        color: blueviolet;
+      }
+  
+      h2 {
+        font-size: 30px;
+        color: lightblue;
+      }
+  
+      span {
+        color: #ffffff;
+      }
+    }
+
   .container {
     display: flex;
     flex-direction: column;
