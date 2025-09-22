@@ -11,7 +11,7 @@
     font-size: 18px;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .logo-container {
@@ -70,6 +70,29 @@ nav {
     }
 }
 
+// Secondary navigation styles for responsiveness
+.second-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .navigation-links {
+        ul {
+            gap: 10px;
+            display: flex;
+            text-align: center;
+            // flex-direction: column;
+        }
+
+        li, a {
+            list-style: none;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
 
 /* Mobile */
 @media (max-width: 480px) {
@@ -138,6 +161,26 @@ nav {
         }
     }
 
+    // Secondary navigation styles for responsiveness
+    .second-nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navigation-links {
+            ul {
+                gap: 10px;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
 }
 
 /* Extra Small Devices */
@@ -188,7 +231,7 @@ nav {
                     a {
                         display: block;
                         padding: 10px 16px;
-                        
+
                         text-decoration: none;
                         color: inherit;
 
@@ -205,6 +248,26 @@ nav {
             opacity: 1;
             visibility: visible;
             transform: scale(1);
+        }
+    }
+
+    // Secondary navigation styles for responsiveness
+    .second-nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navigation-links {
+            ul {
+                gap: 10px;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            li {
+                list-style: none;
+            }
         }
     }
 }

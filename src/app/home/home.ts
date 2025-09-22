@@ -21,6 +21,4 @@ export class Home {
     this.isRegister = !this.isRegister;
   }
 
-  img: string = '/public/AizenSales/public/Austin_Texas_A/A.jpg'
-
 }

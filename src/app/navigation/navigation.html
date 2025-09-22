@@ -12,26 +12,25 @@
 
         <div #menu class="menu" [class.show]="isMenuOpen" role="menu" id="{{!isMenuOpen}}">
             <ul>
-                <li><a routerLink="home">Home &#124;</a></li>
-                <li><a routerLink="contact">Contact &#124;</a></li>
-                <li><a routerLink="about">About us &#124;</a></li>
-                <li><a routerLink="product">Services &#124;</a></li>
+                <li><a routerLink="home" routerLinkActive="active" >Home &#124;</a></li>
+                <li><a routerLink="contact" routerLinkActive="active" >Contact &#124;</a></li>
+                <li><a routerLink="about" routerLinkActive="active" >About us &#124;</a></li>
+                <li><a routerLink="services" routerLinkActive="active" >Services &#124;</a></li>
             </ul>
         </div>
     </nav>
-
 </div>
 
-
-<!-- <div class="second-nav-container">
+<!-- \second path of navigation to main products -->
+<div class="second-nav-container">
     <div class="navigation-links">
         <ul>
-            <li><a routerLink="">Search &#124;</a></li>
-            <li><a routerLink="">Services &#124;</a></li>
-            <li><a routerLink="">Valuation &#124;</a></li>
-            <li><a routerLink="">Advisor &#124;</a></li>
-            <li><a routerLink="">Rental &#124;</a></li>
-            <li><a routerLink="">Other-Services</a></li>
+            <li><a routerLink="pages" routerLinkActive="active" >Homes for sell</a></li>
+            <li><a routerLink="Services" routerLinkActive="active" >Services </a></li>
+            <li><a routerLink="rental" routerLinkActive="active" >Rental Services</a></li>
+            <li><a routerLink="user" routerLinkActive="active" >Other-Services</a></li>
         </ul>
     </div>
-</div> -->
+</div>
+
+<router-outlet></router-outlet>

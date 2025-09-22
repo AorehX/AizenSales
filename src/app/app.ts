@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { Navigation } from "./navigation/navigation";
-import { Home } from "./home/home";
 import { Footer } from "./footer/footer";
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [Navigation, Home, Footer],
+  imports: [Navigation, Footer,],
 
   templateUrl: './app.html',
   styleUrl: './app.scss',

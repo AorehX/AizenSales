@@ -1,132 +1,242 @@
-<!-- features/about/pages/about/about.component.html -->
-<div class="about-page">
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>About Aizen</h1>
-                <p>Your trusted partner in finding the perfect home. We're dedicated to making your real estate dreams a
-                    reality with expertise, integrity, and personalized service.</p>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1>About Aizen</h1>
+            <p>Your trusted partner in finding the perfect home. We're dedicated to making your real estate dreams a
+                reality with expertise, integrity, and personalized service.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Content Section -->
+<section class="about-content">
+    <div class="container">
+        <div class="section-title">
+            <h2>Who We Are</h2>
+            <p>Aizen Real Estate has been connecting people with their dream properties for over a decade, building
+                lasting relationships through trust and excellence.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Your Real Estate Success Story Starts Here</h3>
+                <p>Founded with a vision to revolutionize the real estate experience, Aizen combines cutting-edge
+                    technology with personalized service to deliver exceptional results for our clients.</p>
+
+                <p>Whether you're buying your first home, selling a cherished property, or looking for the perfect
+                    rental, our team of experienced professionals is committed to guiding you through every step of the
+                    process with transparency, expertise, and genuine care.</p>
+
+                <p>We believe that real estate is not just about properties—it's about people, dreams, and building
+                    communities where families can thrive and businesses can flourish.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
+                    alt="Modern real estate office">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Content Section -->
-    <section class="about-content">
-        <div class="container">
-            <div class="section-title">
-                <h2>Who We Are</h2>
-                <p>Aizen Real Estate has been connecting people with their dream properties for over a decade, building
-                    lasting relationships through trust and excellence.</p>
+<!-- Mission & Vision Section -->
+<section class="mission-vision">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Mission & Vision</h2>
+            <p>Driven by purpose, guided by values</p>
+        </div>
+
+        <div class="mv-grid">
+            <div class="mv-card">
+                <div class="icon">🎯</div>
+                <h3>Our Mission</h3>
+                <p>To provide exceptional real estate services that exceed expectations, making property transactions
+                    seamless, transparent, and rewarding for every client we serve.</p>
             </div>
 
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Your Real Estate Success Story Starts Here</h3>
-                    <p>Founded with a vision to revolutionize the real estate experience, Aizen combines cutting-edge
-                        technology with personalized service to deliver exceptional results for our clients.</p>
-
-                    <p>Whether you're buying your first home, selling a cherished property, or looking for the perfect
-                        rental, our team of experienced professionals is committed to guiding you through every step of
-                        the process with transparency, expertise, and genuine care.</p>
-
-                    <p>We believe that real estate is not just about properties—it's about people, dreams, and building
-                        communities where families can thrive and businesses can flourish.</p>
-                </div>
-
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1973&q=80"
-                        alt="Modern real estate office">
-                </div>
+            <div class="mv-card">
+                <div class="icon">🌟</div>
+                <h3>Our Vision</h3>
+                <p>To be the most trusted and innovative real estate platform, empowering people to make informed
+                    property decisions while building stronger communities.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Mission & Vision Section -->
-    <section class="mission-vision">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Mission & Vision</h2>
-                <p>Driven by purpose, guided by values</p>
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Properties Sold</p>
             </div>
-
-            <div class="mv-grid">
-                <div class="mv-card">
-                    <div class="icon">🎯</div>
-                    <h3>Our Mission</h3>
-                    <p>To provide exceptional real estate services that exceed expectations, making property
-                        transactions seamless, transparent, and rewarding for every client we serve.</p>
-                </div>
-
-                <div class="mv-card">
-                    <div class="icon">🌟</div>
-                    <h3>Our Vision</h3>
-                    <p>To be the most trusted and innovative real estate platform, empowering people to make informed
-                        property decisions while building stronger communities.</p>
-                </div>
+            <div class="stat-item">
+                <h3>1200+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Expert Agents</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item" *ngFor="let stat of stats; let i = index">
-                    <h3 class="stat-value" [attr.data-index]="i">0</h3>
-                    <p>{{ stat.label }}</p>
-                </div>
+<!-- Team Section -->
+<section class="team-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Meet Our Team</h2>
+            <p>Experienced professionals dedicated to your success</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">👨‍💼</div>
+                <h4>Michael Johnson</h4>
+                <div class="role">Founder & CEO</div>
+                <p>With over 20 years in real estate, Michael leads Aizen with a passion for innovation and client
+                    satisfaction.</p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">👩‍💼</div>
+                <h4>Sarah Chen</h4>
+                <div class="role">Head of Sales</div>
+                <p>Sarah's expertise in luxury properties and negotiation has helped hundreds of clients achieve their
+                    real estate goals.</p>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">👨‍💻</div>
+                <h4>David Rodriguez</h4>
+                <div class="role">Technology Director</div>
+                <p>David ensures our platform stays cutting-edge, making property search and management effortless for
+                    our clients.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Meet Our Team</h2>
-                <p>Experienced professionals dedicated to your success</p>
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose Aizen?</h2>
+            <p>What sets us apart in the real estate industry</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h4>Proven Track Record</h4>
+                <p>Over 15 years of successful transactions and satisfied clients speak to our expertise and reliability
+                    in the real estate market.</p>
             </div>
 
-            <div class="team-grid">
-                <div class="team-card" *ngFor="let member of teamMembers">
-                    <div class="team-avatar">{{ member.avatar }}</div>
-                    <h4>{{ member.name }}</h4>
-                    <div class="role">{{ member.role }}</div>
-                    <p>{{ member.description }}</p>
-                </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h4>Market Expertise</h4>
+                <p>Deep local knowledge and market insights help you make informed decisions whether buying, selling, or
+                    renting.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h4>Technology-Driven</h4>
+                <p>Our advanced platform provides virtual tours, detailed analytics, and seamless communication
+                    throughout your journey.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h4>Personalized Service</h4>
+                <p>Every client receives tailored attention and customized solutions that align with their unique needs
+                    and preferences.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h4>Fast & Efficient</h4>
+                <p>Streamlined processes and dedicated support ensure quick turnarounds without compromising on quality
+                    or attention to detail.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h4>Trusted & Secure</h4>
+                <p>Full transparency, secure transactions, and comprehensive legal support give you peace of mind
+                    throughout the process.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose Aizen?</h2>
-                <p>What sets us apart in the real estate industry</p>
-            </div>
-
-            <div class="features-grid">
-                
-                <div class="feature-card" *ngFor="let feature of features">
-                    <div class="feature-icon">{{ feature.icon }}</div>
-                    <h4>{{ feature.title }}</h4>
-                    <p>{{ feature.description }}</p>
-                </div>
-            </div>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Let's turn your real estate dreams into reality. Contact us today for a personalized consultation.</p>
+            <a href="/contact" class="cta-button">Get Started Today</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Ready to Start Your Journey?</h2>
-                <p>Let's turn your real estate dreams into reality. Contact us today for a personalized consultation.
-                </p>
-                <button class="cta-button" (click)="navigateToContact()">Get Started Today</button>
-            </div>
-        </div>
-    </section>
-</div>
+<script>
+    // Simple animation for statistics on scroll
+    function animateStats() {
+        const stats = document.querySelectorAll('.stat-item h3');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const finalValue = parseInt(target.textContent);
+                    animateValue(target, 0, finalValue, 2000);
+                    observer.unobserve(target);
+                }
+            });
+        });
+
+        stats.forEach(stat => observer.observe(stat));
+    }
+
+    function animateValue(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const value = Math.floor(progress * (end - start) + start);
+            element.textContent = value + (element.textContent.includes('+') ? '+' : '');
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    // Initialize animations when page loads
+    document.addEventListener('DOMContentLoaded', animateStats);
+
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+</script>

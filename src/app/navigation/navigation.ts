@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { ElementRef, ViewChild, Renderer2, } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet, RouterModule } from '@angular/router';
+import { Router } from 'express';
 
 
 
@@ -8,7 +10,7 @@ import { ElementRef, ViewChild, Renderer2, } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
-  imports : [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './navigation.html',
   styleUrls: ['./navigation.scss']
 })

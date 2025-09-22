@@ -1,1 +1,163 @@
-<p>page-notfound works!</p>
+<div class="page-container">
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="floating-house">🏠</div>
+        <div class="floating-house">🏡</div>
+        <div class="floating-house">🏘️</div>
+        <div class="floating-house">🏢</div>
+        <div class="floating-house">🏠</div>
+        <div class="floating-house">🏡</div>
+    </div>
+    
+    <!-- Main content -->
+    <div class="not-found-container">
+        <div class="house-icon">🏠</div>
+        <div class="error-number">404</div>
+    
+        <h1 class="error-title">Oops! Property Not Found</h1>
+        <p class="error-subtitle">
+            It looks like the page you're searching for has moved to a new neighborhood!
+        </p>
+        <p class="error-message">
+            Don't worry, we'll help you find what you're looking for. The URL you entered might be incorrect, or the page
+            may have been relocated or removed.
+        </p>
+    
+        <!-- Action buttons -->
+        <div class="action-buttons">
+            <a href="/" class="btn btn-primary" onclick="handleGoHome(this)">
+                🏠 Go Home
+            </a>
+            <button class="btn btn-secondary" onclick="goBack()">
+                ← Go Back
+            </button>
+        </div>
+    
+        <!-- Search suggestion -->
+        <div class="search-suggestion">
+            <h3>🔍 Search for Properties</h3>
+            <input type="text" class="search-input"
+                placeholder="Try searching for 'apartments', 'houses for sale', or a location..."
+                onkeypress="handleSearch(event)">
+        </div>
+    
+        <!-- Quick links -->
+        <div class="quick-links">
+            <h3>Popular Pages</h3>
+            <div class="links-grid">
+                <a href="/properties/search" class="quick-link">
+                    🔍 Search
+                </a>
+                <a href="/properties/for-sale" class="quick-link">
+                    🏷️ For Sale
+                </a>
+                <a href="/properties/for-rent" class="quick-link">
+                    🏠 For Rent
+                </a>
+                <a href="/about" class="quick-link">
+                    ℹ️ About Us
+                </a>
+                <a href="/contact" class="quick-link">
+                    📞 Contact
+                </a>
+                <a href="/auth/login" class="quick-link">
+                    👤 Login
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Go back in browser history
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = '/';
+            }
+        }
+
+        // Handle home button with loading state
+        function handleGoHome(button) {
+            button.classList.add('loading');
+            // Small delay to show loading state
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 500);
+        }
+
+        // Handle search functionality
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const query = event.target.value.trim();
+                if (query) {
+                    // Redirect to search page with query
+                    window.location.href = `/properties/search?q=${encodeURIComponent(query)}`;
+                }
+            }
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add click effect to floating houses
+            const floatingHouses = document.querySelectorAll('.floating-house');
+            floatingHouses.forEach(house => {
+                house.addEventListener('click', function () {
+                    this.style.animation = 'none';
+                    this.style.transform = 'scale(1.5) rotate(360deg)';
+                    this.style.opacity = '0.8';
+
+                    setTimeout(() => {
+                        this.style.animation = 'float 6s ease-in-out infinite';
+                        this.style.transform = '';
+                        this.style.opacity = '';
+                    }, 1000);
+                });
+            });
+
+            // Auto-focus search input on desktop
+            const searchInput = document.querySelector('.search-input');
+            if (window.innerWidth > 768) {
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 1000);
+            }
+
+            // Add search suggestions
+            const searchSuggestions = [
+                'apartments in downtown',
+                'houses for sale',
+                'luxury condos',
+                '3 bedroom homes',
+                'properties under $500k'
+            ];
+
+            let suggestionIndex = 0;
+            setInterval(() => {
+                if (!searchInput.value && document.activeElement !== searchInput) {
+                    searchInput.placeholder = `Try searching for '${searchSuggestions[suggestionIndex]}'...`;
+                    suggestionIndex = (suggestionIndex + 1) % searchSuggestions.length;
+                }
+            }, 3000);
+        });
+
+        // Track 404 error for analytics (if you have analytics)
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 - Page Not Found',
+                page_location: window.location.href
+            });
+        }
+
+        // Report error to monitoring service (example)
+        if (typeof console !== 'undefined') {
+            console.warn('404 Error:', {
+                url: window.location.href,
+                referrer: document.referrer,
+                userAgent: navigator.userAgent,
+                timestamp: new Date().toISOString()
+            });
+        }
+    </script>
+
+</div>

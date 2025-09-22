@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './pages.scss'
 })
 export class Pages {
-
+  img: string = '/Austin_Texas_A/a.jpg'
 }
