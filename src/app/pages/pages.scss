@@ -1,10 +1,35 @@
+.gallery-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  //display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  //gap: 2rem;
+  //padding: 2rem;
+  //margin: 0 auto;
+  max-width: 350px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  button {
+    margin: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 13px;
+    background-color: blue;
+  }
 }
 
 .house-card {
@@ -20,11 +45,34 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.house-card img {
+.main-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+.additional-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.additional-images.show {
+  max-height: 500px; /* Adjust based on your content */
+
+
+}
+
+.additional-images img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .house-card h3 {
@@ -35,13 +83,65 @@
 }
 
 .house-card p {
-  margin: 0.5rem 1rem 1rem;
+  margin: 0.5rem 1rem;
   color: #666;
   line-height: 1.4;
 }
 
-.house-card p:first-of-type {
+.price {
   font-weight: bold;
   color: #2c5530;
   font-size: 1.1rem;
+}
+
+.view-more-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2c5530;
+  color: white;
+  border: none;
+  border-radius: 0 0 12px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #1e3a22;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Extra Small Devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+}
+
+/* Extra Large Screens */
+@media (min-width: 1920px) {
 }
