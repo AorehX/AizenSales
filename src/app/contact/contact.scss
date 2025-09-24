@@ -19,12 +19,14 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
     color: white;
     padding: 120px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .hero-section::before {
@@ -115,8 +117,8 @@ body {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
     border-radius: 2px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .section-subtitle {
@@ -152,11 +154,11 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
     padding: 3px 8px;
     border-radius: 4px;
     font-weight: 600;
     color: #333;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .overview-image {
@@ -208,7 +210,7 @@ body {
 .mv-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -216,6 +218,7 @@ body {
     font-size: 2rem;
     color: white;
     margin: 0 auto 30px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .mv-card h3 {
@@ -234,9 +237,9 @@ body {
 /* Statistics */
 .statistics {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .stats-grid {
@@ -285,8 +288,9 @@ body {
     transform: translateX(-50%);
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, #667eea, #764ba2);
+
     border-radius: 2px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .story-item {
@@ -418,13 +422,14 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     color: white;
     margin: 0 auto 25px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .team-card h4 {
@@ -450,9 +455,11 @@ body {
 /* Call to Action */
 .cta-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
     color: white;
     text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
 .cta-content h2 {
