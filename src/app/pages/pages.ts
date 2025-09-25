@@ -33,9 +33,14 @@ export class Pages {
         imageN: '/Austin_Texas_A/n.jpg',
         imageO: '/Austin_Texas_A/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Serret Owen',
+      title: 'Luxury Fashion',
+      price: '$950,000',
+      location: 'Austin, Texas',
+      address: '5136 Big Fork Rd, Fort Worth, TX 76119',
+      landMass: '3,976, sqft',
+      details: '4 beds, 3 baths, Little Garden',
       showAllimages: false,
     }
   ]
@@ -59,9 +64,14 @@ export class Pages {
         imageN: '/Austin_Texas_B/n.jpg',
         imageO: '/Austin_Texas_B/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Marry Peterson',
+      title: 'Modern Luxury',
+      price: '$810,000',
+      location: 'Austin, Texas',
+      address: '13451 Bullick Hollow Rd, Austin, TX 78726',
+      landMass: '2,255, sqft',
+      details: '3 beds, 2 baths, Resting Park',
       showAllimages: false,
     }
   ]
@@ -85,9 +95,14 @@ export class Pages {
         imageN: '/Austin_Texas_C/n.jpg',
         imageO: '/Austin_Texas_C/o.jpg',
       },
+
+      owner: 'Fred Jackson',
       title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      price: '$715,000',
+      location: 'Austin, AR',
+      address: '50 Saddle Brook Cv, Austin, AR 72007',
+      landMass: '3, 882 sgft',
+      details: '4 beds, 4 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -111,9 +126,14 @@ export class Pages {
         imageN: '/Austin_Texas_D/n.jpg',
         imageO: '/Austin_Texas_D/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Clark Timothy',
+      title: 'Haven Condo',
+      price: '$621,000',
+      location: 'Los Angeles, CA',
+      address: '2949 London St, Los Angeles, CA 90026',
+      landMass: '2,589 sqft',
+      details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
     }
   ]
@@ -137,8 +157,13 @@ export class Pages {
         imageN: '/Austin_Texas_E/n.jpg',
         imageO: '/Austin_Texas_E/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
+
+      owner: 'Abigail James',
+      title: 'Paradise villa',
+      price: '$425,000',
+      location: 'Los Angeles, CA',
+      address: '676 Shepard St APT 6, San Pedro, CA 90731',
+      landMass: '2,526 sqft',
       details: '3 beds, 2 baths, swimming pool',
       showAllimages: false,
     }
@@ -163,9 +188,14 @@ export class Pages {
         imageN: '/Austin_Texas_F/n.jpg',
         imageO: '/Austin_Texas_F/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Bright Steven',
+      title: 'Spacious Haven',
+      price: '$710,000',
+      location: 'Los Angeles, CA',
+      address: '13535 Bayliss Rd, Los Angeles, CA 90049',
+      landMass: '4,852 sqft',
+      details: '4 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -189,8 +219,13 @@ export class Pages {
         imageN: '/Austin_Texas_G/n.jpg',
         imageO: '/Austin_Texas_G/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
+
+      owner: 'George Albert',
+      title: 'Joint Park',
+      price: '$690,000',
+      location: 'Florida',
+      address: '4952 Creekside Park Ave, Orlando, FL 32811',
+      landMass: '3,525 sqft',
       details: '3 beds, 2 baths, swimming pool',
       showAllimages: false,
     }
@@ -215,9 +250,14 @@ export class Pages {
         imageN: '/Austin_Texas_H/n.jpg',
         imageO: '/Austin_Texas_H/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Bret Luw',
+      title: 'Garden Sight',
+      price: '$680,000',
+      location: 'Oklahoma',
+      address: '1040 Mabel C Fry Blvd, Yukon, OK 73099',
+      landMass: '2,657 sqft',
+      details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -241,9 +281,14 @@ export class Pages {
         imageN: '/Austin_Texas_I/n.jpg',
         imageO: '/Austin_Texas_I/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Johnson Muller',
+      title: 'Spark Light',
+      price: '$912,000',
+      location: 'Ohio, CC',
+      address: '7550 Brill Rd, Cincinnati, OH 45243',
+      landMass: '3,657 sqft',
+      details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -267,9 +312,14 @@ export class Pages {
         imageN: '/Austin_Texas_J/n.jpg',
         imageO: '/Austin_Texas_J/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Esther Clark',
+      title: 'Classic Vile',
+      price: '$765,000',
+      location: 'Ohio',
+      address: '69 Cook Ln, Chillicothe, OH 45601',
+      landMass: '4,232 sqft',
+      details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
     }
   ]
@@ -293,9 +343,14 @@ export class Pages {
         imageN: '/Austin_Texas_K/n.jpg',
         imageO: '/Austin_Texas_K/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Linda Murphy',
+      title: 'City Hall',
+      price: '$590,000',
+      location: 'Ohio',
+      address: '2295 Shenandoah Dr, Troy, OH 45373',
+      landMass: '2,765 sqft',
+      details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
     }
   ]
@@ -319,9 +374,14 @@ export class Pages {
         imageN: '/Austin_Texas_L/n.jpg',
         imageO: '/Austin_Texas_L/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Samson George',
+      title: 'Blissful Spark',
+      price: '$812,000',
+      location: 'Ohio',
+      address: '24835 W Northwood Dr, Olmsted Falls, OH 44138',
+      landMass: '2,336 sqft',
+      details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
     }
   ]
@@ -345,9 +405,14 @@ export class Pages {
         imageN: '/Austin_Texas_M/n.jpg',
         imageO: '/Austin_Texas_M/o.jpg',
       },
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+
+      owner: 'Smith Oink',
+      title: 'Modern Condo',
+      price: '$412,000',
+      location: 'Dallas, TX',
+      address: '3019 Golden Birch Dr, Dallas, TX 75253',
+      landMass: '2,132 sqft',
+      details: '3 beds, 2 baths, Open field',
       showAllimages: false,
     }
   ]
@@ -372,9 +437,13 @@ export class Pages {
         imageO: '/Austin_Texas_N/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Kendrick Chen',
+      title: 'Spacious Lava',
+      price: '$582,000',
+      location: 'Los Angeles, CA',
+      address: '676 Shepard St APT 6, San Pedro, CA 90731',
+      landMass: '1,986 sqft',
+      details: '3 beds, 2 baths, Resting park',
       showAllimages: false,
     }
   ]
@@ -399,9 +468,13 @@ export class Pages {
         imageO: '/Austin_Texas_O/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Kevin White',
+      title: 'Glorious Park',
+      price: '$1,812,000',
+      location: 'Ohio',
+      address: '7550 Brill Rd, Cincinnati, OH 45243',
+      landMass: '4,883 sqft',
+      details: '4 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -426,9 +499,13 @@ export class Pages {
         imageO: '/Austin_Texas_P/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Nicholas Taylor',
+      title: 'Bliss Home',
+      price: '$1,419,000',
+      location: 'New York YK',
+      address: '54 Kent St, Staten Island, NY 10306',
+      landMass: '2,737 sqft',
+      details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
     }
   ]
@@ -453,9 +530,13 @@ export class Pages {
         imageO: '/Austin_Texas_Q/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Christopher Martinez',
+      title: 'Spring Boot',
+      price: '$1,819,000',
+      location: 'New York',
+      address: '240 Alter Ave, Staten Island, NY 10305',
+      landMass: '4,821 sqft',
+      details: '4 beds, 3 baths, Open Field',
       showAllimages: false,
     }
   ]
@@ -480,9 +561,13 @@ export class Pages {
         imageO: '/Austin_Texas_R/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Emily Davis',
+      title: 'Spacious INN',
+      price: '2,817,000',
+      location: 'Charlotte, NC',
+      address: '10205 Ventana Ct, Charlotte, NC 28277',
+      landMass: '5,214 sqft',
+      details: '4 beds, 4 baths, Open field',
       showAllimages: false,
     }
   ]
@@ -507,9 +592,13 @@ export class Pages {
         imageO: '/Austin_Texas_S/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Saul Nicolas',
+      title: 'Modern Have',
+      price: '$610,000',
+      location: 'Austin, TX',
+      address: '11500 Sterlinghill Dr, Austin, TX 78758',
+      landMass: '2,893 sqft',
+      details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -534,9 +623,13 @@ export class Pages {
         imageO: '/Austin_Texas_T/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Samuel Hall',
+      title: 'Entertainment Park',
+      price: '$921,000',
+      location: 'Ohio',
+      address: '10720 Weatherstone Ct, Loveland, OH 45140',
+      landMass: '3,212 sqft',
+      details: '4 beds, 4 baths, Open field & Garden',
       showAllimages: false,
     }
   ]
@@ -557,13 +650,17 @@ export class Pages {
         imageK: '/Austin_Texas_U/k.jpg',
         imageL: '/Austin_Texas_U/l.jpg',
         imageM: '/Austin_Texas_U/m.jpg',
-        imageN: '/Austin_Texas_u/n.jpg',
+        imageN: '/Austin_Texas_U/n.jpg',
         imageO: '/Austin_Texas_U/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Kes Smart',
+      title: 'District Have',
+      price: '$620,000',
+      location: 'Ohio',
+      address: '3259 Berwyn Pl, Cincinnati, OH 45209',
+      landMass: '2,429, sqft',
+      details: '3 beds, 3 baths, Back Field',
       showAllimages: false,
     }
   ]
@@ -588,9 +685,13 @@ export class Pages {
         imageO: '/Austin_Texas_V/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Matthew Simpson',
+      title: 'Villa Ice',
+      price: '$712,000',
+      location: 'Ohio',
+      address: '3259 Berwyn Pl, Cincinnati, OH 45209',
+      landMass: '3,865, sqft',
+      details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -615,9 +716,13 @@ export class Pages {
         imageO: '/Austin_Texas_W/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Steve Neptune',
+      title: 'Mill Spark',
+      price: '$520,000',
+      location: 'Ohio',
+      address: '5938 Woodmont Ave, Cincinnati, OH 45213',
+      landMass: '2,988, sqft',
+      details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
     }
   ]
@@ -642,9 +747,13 @@ export class Pages {
         imageO: '/Austin_Texas_X/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Josh Marine',
+      title: 'Eve Mill',
+      price: '$950,000',
+      location: 'Alaska',
+      address: '',
+      landMass: '3,755, sqft',
+      details: '3 beds, 2 baths, Open field',
       showAllimages: false,
     }
   ]
@@ -669,9 +778,13 @@ export class Pages {
         imageO: '/Austin_Texas_Y/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'George Alvin',
+      title: 'Main Strict',
+      price: '$919,000',
+      location: 'Ohio',
+      address: '8204 Via Verde Dr, Austin, TX 78739',
+      landMass: '3,265, sqft',
+      details: '4 beds, 4 baths, swimming pool',
       showAllimages: false,
     }
   ]
@@ -696,17 +809,19 @@ export class Pages {
         imageO: '/Austin_Texas_Z/o.jpg',
       },
 
-      title: 'Modern Villa',
-      price: '$250,000',
-      details: '3 beds, 2 baths, swimming pool',
+      owner: 'Bose Andre',
+      title: 'Modern Haven',
+      price: '$810,000',
+      location: 'Ohio',
+      address: '2719 Harris Blvd, Austin, TX 78703',
+      landMass: '4,251, sqft',
+      details: '4 beds, 5 baths, swimming pool',
       showAllimages: false,
     }
   ]
-
 
   // function to view more images
   toggleImages(house: any) {
     house.showAllimages = !house.showAllimages;
   }
-
 }
