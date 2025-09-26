@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import {FormsModule, NgModel} from '@angular/forms';
 
 @Component({
   selector: 'app-pages',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   templateUrl: './pages.html',
   styleUrl: './pages.scss'
 })
 
 export class Pages {
-  // firstImage: string = '/Austin_Texas_A/a.jpg';
-
   // Sections for the house to display
   austinA: any[] = [
     {
@@ -124,7 +124,7 @@ export class Pages {
         imageL: '/Austin_Texas_D/l.jpg',
         imageM: '/Austin_Texas_D/m.jpg',
         imageN: '/Austin_Texas_D/n.jpg',
-        imageO: '/Austin_Texas_D/o.jpg',
+        // imageO: '/Austin_Texas_D/o.jpg',
       },
 
       owner: 'Clark Timothy',
@@ -824,4 +824,66 @@ export class Pages {
   toggleImages(house: any) {
     house.showAllimages = !house.showAllimages;
   }
+
+  allHouses: any[] = [
+    this.austinA,
+    this.austinB,
+    this.austinC,
+    this.austinD,
+    this.austinE,
+    this.austinF,
+    this.austinG,
+    this.austinH,
+    this.austinI,
+    this.austinJ,
+    this.austinK,
+    this.austinL,
+    this.austinM,
+    this.austinN,
+    this.austinO,
+    this.austinP,
+    this.austinQ,
+    this.austinR,
+    this.austinS,
+    this.austinT,
+    this.austinU,
+    this.austinV,
+    this.austinW,
+    this.austinX,
+    this.austinY,
+    this.austinZ,
+  ]
+
+  searchTerm: string = '';
+  filterHouse: any[] = [];
+
+  ngOnInt() {
+    this.filterHouse = this.allHouses
+  }
+
+  searchHouse() {
+    const term = this.searchTerm.toLocaleLowerCase().trim();
+    if (!term) {
+      this.filterHouse = this.allHouses;
+      return;
+    }
+
+    if (!this.searchTerm.trim()) {
+      this.filterHouse = this.allHouses
+      return;
+    }
+
+    this.filterHouse = this.allHouses.filter(house =>
+      house.title.toLocaleLowerCase().includes(term) ||
+      house.price.toLocaleLowerCase().includes(term) ||
+      house.details.toLocaleLowerCase.includes(term) ||
+      (house.location && house.location.toLocaleLowerCase().includes(term))
+    );
+  }
+
+  clearSearch() {
+    this.searchTerm = '';
+    this.filterHouse = this.allHouses;
+  }
+
 }

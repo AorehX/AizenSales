@@ -1,3 +1,21 @@
+<!--<div class="search-bar">-->
+<!--  <input type="text" placeholder="Search houses..." (input)="searchHouse()" [(ngModel)]="searchTerm" />-->
+<!--  <button (click)="clearSearch()">Clear</button>-->
+<!--</div>-->
+
+<div class="gallery">
+  @for (house of filterHouse; track $index) {
+  <div>
+    <h3>{{ house.title }}</h3>
+    <p>{{ house.price }}</p>
+    <p>{{ house.details }}</p>
+    @if (house.location){
+    <p>{{ house.location }}</p>
+    }
+  </div>
+  }
+</div>
+
 <div class="gallery-container">
   <!--  page 1-->
   <div class="gallery">
@@ -6,7 +24,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -37,7 +55,7 @@
     <!--    view more/less button-->
     <!-- <div class="view-more-button">
       <button (click)="toggleImages(house)">
-        {{ house.showAllimages ? 'view less': 'view more'}} 
+        {{ house.showAllimages ? 'view less': 'view more'}}
       </button>
     </div> -->
     }
@@ -50,7 +68,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -92,7 +110,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -134,7 +152,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -159,7 +177,7 @@
       <img [ngSrc]="house.images.imageL" alt="house" width="250" height="210">
       <img [ngSrc]="house.images.imageM" alt="house" width="250" height="210">
       <img [ngSrc]="house.images.imageN" alt="house" width="250" height="210">
-      <img [ngSrc]="house.images.imageO" alt="house" width="250" height="210">
+      <!-- <img [ngSrc]="house.images.imageO" alt="house" width="250" height="210"> -->
     </div>
 
     <!--    view more/less button-->
@@ -176,7 +194,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -218,7 +236,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -260,7 +278,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -302,7 +320,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -344,7 +362,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -386,7 +404,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -428,7 +446,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -470,7 +488,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -512,7 +530,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -554,7 +572,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -596,7 +614,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -638,7 +656,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -680,7 +698,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -722,7 +740,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -764,7 +782,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -806,7 +824,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -848,7 +866,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -890,7 +908,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -932,7 +950,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -974,7 +992,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -1016,7 +1034,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
@@ -1058,7 +1076,7 @@
       <!--      main image-->
       <img [ngSrc]="house.images.imageA" alt="" width="250" height="210">
       <h3>{{ house.title }}</h3>
-      <p> <strong>Owner:</strong>{{house.owner}}</p>
+<!--      <p> <strong>Owner:</strong>{{house.owner}}</p>-->
       <p>{{ house.price }}</p>
       <p>{{ house.details }}</p>
       <p>{{house.address}}</p>
