@@ -1,13 +1,13 @@
 <div class="parent-container">
     <div class="logo-container">
         <div class="logo">
-            <img src="./Aizen-logo.png" alt="">
+            <img src="/Logos/Aizen-logo.png" alt="">
         </div>
     </div>
 
     <nav class="nav">
         <button #menuBtn class="menu-btn" (click)="toggleMenu()" id="{{isMenuOpen}}">
-            <img src="/menu.svg" alt="Menu">
+            <img src="/Logos/menu.svg" alt="Menu">
         </button>
 
         <div #menu class="menu" [class.show]="isMenuOpen" role="menu" id="{{!isMenuOpen}}">
@@ -26,7 +26,7 @@
     <div class="navigation-links">
         <ul>
             <li><a routerLink="pages" routerLinkActive="active" >Homes for sell</a></li>
-            <li><a routerLink="Services" routerLinkActive="active" >Services </a></li>
+            <li><a routerLink="services" routerLinkActive="active" >Services </a></li>
             <li><a routerLink="rental" routerLinkActive="active" >Rental Services</a></li>
             <li><a routerLink="user" routerLinkActive="active" >Other-Services</a></li>
         </ul>

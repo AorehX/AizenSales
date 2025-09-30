@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import {FormsModule, NgModel} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-pages',
@@ -14,25 +14,25 @@ import {FormsModule, NgModel} from '@angular/forms';
 
 export class Pages {
   // Sections for the house to display
-  austinA: any[] = [
+  houses: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_A/a.jpg',
-        imageB: '/Austin_Texas_A/b.jpg',
-        imageC: '/Austin_Texas_A/c.jpg',
-        imageD: '/Austin_Texas_A/d.jpg',
-        imageE: '/Austin_Texas_A/e.jpg',
-        imageF: '/Austin_Texas_A/f.jpg',
-        imageG: '/Austin_Texas_A/g.jpg',
-        imageH: '/Austin_Texas_A/h.jpg',
-        imageI: '/Austin_Texas_A/i.jpg',
-        imageJ: '/Austin_Texas_A/j.jpg',
-        imageK: '/Austin_Texas_A/k.jpg',
-        imageL: '/Austin_Texas_A/l.jpg',
-        imageM: '/Austin_Texas_A/m.jpg',
-        imageN: '/Austin_Texas_A/n.jpg',
-        imageO: '/Austin_Texas_A/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_A/a.jpg',
+        '/Austin_Texas_A/b.jpg',
+        '/Austin_Texas_A/c.jpg',
+        '/Austin_Texas_A/d.jpg',
+        '/Austin_Texas_A/e.jpg',
+        '/Austin_Texas_A/f.jpg',
+        '/Austin_Texas_A/g.jpg',
+        '/Austin_Texas_A/h.jpg',
+        '/Austin_Texas_A/i.jpg',
+        '/Austin_Texas_A/j.jpg',
+        '/Austin_Texas_A/k.jpg',
+        '/Austin_Texas_A/l.jpg',
+        '/Austin_Texas_A/m.jpg',
+        '/Austin_Texas_A/n.jpg',
+        '/Austin_Texas_A/o.jpg',
+      ],
 
       owner: 'Serret Owen',
       title: 'Luxury Fashion',
@@ -42,28 +42,26 @@ export class Pages {
       landMass: '3,976, sqft',
       details: '4 beds, 3 baths, Little Garden',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinB: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_B/a.jpg',
-        imageB: '/Austin_Texas_B/b.jpg',
-        imageC: '/Austin_Texas_B/c.jpg',
-        imageD: '/Austin_Texas_B/d.jpg',
-        imageE: '/Austin_Texas_B/e.jpg',
-        imageF: '/Austin_Texas_B/f.jpg',
-        imageG: '/Austin_Texas_B/g.jpg',
-        imageH: '/Austin_Texas_B/h.jpg',
-        imageI: '/Austin_Texas_B/i.jpg',
-        imageJ: '/Austin_Texas_B/j.jpg',
-        imageK: '/Austin_Texas_B/k.jpg',
-        imageL: '/Austin_Texas_B/l.jpg',
-        imageM: '/Austin_Texas_B/m.jpg',
-        imageN: '/Austin_Texas_B/n.jpg',
-        imageO: '/Austin_Texas_B/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_B/a.jpg',
+        '/Austin_Texas_B/b.jpg',
+        '/Austin_Texas_B/c.jpg',
+        '/Austin_Texas_B/d.jpg',
+        '/Austin_Texas_B/e.jpg',
+        '/Austin_Texas_B/f.jpg',
+        '/Austin_Texas_B/g.jpg',
+        '/Austin_Texas_B/h.jpg',
+        '/Austin_Texas_B/i.jpg',
+        '/Austin_Texas_B/j.jpg',
+        '/Austin_Texas_B/k.jpg',
+        '/Austin_Texas_B/l.jpg',
+        '/Austin_Texas_B/m.jpg',
+        '/Austin_Texas_B/n.jpg',
+        '/Austin_Texas_B/o.jpg',
+      ],
 
       owner: 'Marry Peterson',
       title: 'Modern Luxury',
@@ -73,28 +71,26 @@ export class Pages {
       landMass: '2,255, sqft',
       details: '3 beds, 2 baths, Resting Park',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinC: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_C/a.jpg',
-        imageB: '/Austin_Texas_C/b.jpg',
-        imageC: '/Austin_Texas_C/c.jpg',
-        imageD: '/Austin_Texas_C/d.jpg',
-        imageE: '/Austin_Texas_C/e.jpg',
-        imageF: '/Austin_Texas_C/f.jpg',
-        imageG: '/Austin_Texas_C/g.jpg',
-        imageH: '/Austin_Texas_C/h.jpg',
-        imageI: '/Austin_Texas_C/i.jpg',
-        imageJ: '/Austin_Texas_C/j.jpg',
-        imageK: '/Austin_Texas_C/k.jpg',
-        imageL: '/Austin_Texas_C/l.jpg',
-        imageM: '/Austin_Texas_C/m.jpg',
-        imageN: '/Austin_Texas_C/n.jpg',
-        imageO: '/Austin_Texas_C/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_C/a.jpg',
+        '/Austin_Texas_C/b.jpg',
+        '/Austin_Texas_C/c.jpg',
+        '/Austin_Texas_C/d.jpg',
+        '/Austin_Texas_C/e.jpg',
+        '/Austin_Texas_C/f.jpg',
+        '/Austin_Texas_C/g.jpg',
+        '/Austin_Texas_C/h.jpg',
+        '/Austin_Texas_C/i.jpg',
+        '/Austin_Texas_C/j.jpg',
+        '/Austin_Texas_C/k.jpg',
+        '/Austin_Texas_C/l.jpg',
+        '/Austin_Texas_C/m.jpg',
+        '/Austin_Texas_C/n.jpg',
+        '/Austin_Texas_C/o.jpg',
+      ],
 
       owner: 'Fred Jackson',
       title: 'Modern Villa',
@@ -104,28 +100,26 @@ export class Pages {
       landMass: '3, 882 sgft',
       details: '4 beds, 4 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinD: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_D/a.jpg',
-        imageB: '/Austin_Texas_D/b.jpg',
-        imageC: '/Austin_Texas_D/c.jpg',
-        imageD: '/Austin_Texas_D/d.jpg',
-        imageE: '/Austin_Texas_D/e.jpg',
-        imageF: '/Austin_Texas_D/f.jpg',
-        imageG: '/Austin_Texas_D/g.jpg',
-        imageH: '/Austin_Texas_D/h.jpg',
-        imageI: '/Austin_Texas_D/i.jpg',
-        imageJ: '/Austin_Texas_D/j.jpg',
-        imageK: '/Austin_Texas_D/k.jpg',
-        imageL: '/Austin_Texas_D/l.jpg',
-        imageM: '/Austin_Texas_D/m.jpg',
-        imageN: '/Austin_Texas_D/n.jpg',
-        // imageO: '/Austin_Texas_D/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_D/a.jpg',
+        '/Austin_Texas_D/b.jpg',
+        '/Austin_Texas_D/c.jpg',
+        '/Austin_Texas_D/d.jpg',
+        '/Austin_Texas_D/e.jpg',
+        '/Austin_Texas_D/f.jpg',
+        '/Austin_Texas_D/g.jpg',
+        '/Austin_Texas_D/h.jpg',
+        '/Austin_Texas_D/i.jpg',
+        '/Austin_Texas_D/j.jpg',
+        '/Austin_Texas_D/k.jpg',
+        '/Austin_Texas_D/l.jpg',
+        '/Austin_Texas_D/m.jpg',
+        '/Austin_Texas_D/n.jpg',
+        //'/Austin_Texas_D/o.jpg',
+      ],
 
       owner: 'Clark Timothy',
       title: 'Haven Condo',
@@ -135,28 +129,26 @@ export class Pages {
       landMass: '2,589 sqft',
       details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinE: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_E/a.jpg',
-        imageB: '/Austin_Texas_E/b.jpg',
-        imageC: '/Austin_Texas_E/c.jpg',
-        imageD: '/Austin_Texas_E/d.jpg',
-        imageE: '/Austin_Texas_E/e.jpg',
-        imageF: '/Austin_Texas_E/f.jpg',
-        imageG: '/Austin_Texas_E/g.jpg',
-        imageH: '/Austin_Texas_E/h.jpg',
-        imageI: '/Austin_Texas_E/i.jpg',
-        imageJ: '/Austin_Texas_E/j.jpg',
-        imageK: '/Austin_Texas_E/k.jpg',
-        imageL: '/Austin_Texas_E/l.jpg',
-        imageM: '/Austin_Texas_E/m.jpg',
-        imageN: '/Austin_Texas_E/n.jpg',
-        imageO: '/Austin_Texas_E/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_E/a.jpg',
+        '/Austin_Texas_E/b.jpg',
+        '/Austin_Texas_E/c.jpg',
+        '/Austin_Texas_E/d.jpg',
+        '/Austin_Texas_E/e.jpg',
+        '/Austin_Texas_E/f.jpg',
+        '/Austin_Texas_E/g.jpg',
+        '/Austin_Texas_E/h.jpg',
+        '/Austin_Texas_E/i.jpg',
+        '/Austin_Texas_E/j.jpg',
+        '/Austin_Texas_E/k.jpg',
+        '/Austin_Texas_E/l.jpg',
+        '/Austin_Texas_E/m.jpg',
+        '/Austin_Texas_E/n.jpg',
+        '/Austin_Texas_E/o.jpg',
+      ],
 
       owner: 'Abigail James',
       title: 'Paradise villa',
@@ -166,28 +158,26 @@ export class Pages {
       landMass: '2,526 sqft',
       details: '3 beds, 2 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinF: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_F/a.jpg',
-        imageB: '/Austin_Texas_F/b.jpg',
-        imageC: '/Austin_Texas_F/c.jpg',
-        imageD: '/Austin_Texas_F/d.jpg',
-        imageE: '/Austin_Texas_F/e.jpg',
-        imageF: '/Austin_Texas_F/f.jpg',
-        imageG: '/Austin_Texas_F/g.jpg',
-        imageH: '/Austin_Texas_F/h.jpg',
-        imageI: '/Austin_Texas_F/i.jpg',
-        imageJ: '/Austin_Texas_F/j.jpg',
-        imageK: '/Austin_Texas_F/k.jpg',
-        imageL: '/Austin_Texas_F/l.jpg',
-        imageM: '/Austin_Texas_F/m.jpg',
-        imageN: '/Austin_Texas_F/n.jpg',
-        imageO: '/Austin_Texas_F/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_F/a.jpg',
+        '/Austin_Texas_F/b.jpg',
+        '/Austin_Texas_F/c.jpg',
+        '/Austin_Texas_F/d.jpg',
+        '/Austin_Texas_F/e.jpg',
+        '/Austin_Texas_F/f.jpg',
+        '/Austin_Texas_F/g.jpg',
+        '/Austin_Texas_F/h.jpg',
+        '/Austin_Texas_F/i.jpg',
+        '/Austin_Texas_F/j.jpg',
+        '/Austin_Texas_F/k.jpg',
+        '/Austin_Texas_F/l.jpg',
+        '/Austin_Texas_F/m.jpg',
+        '/Austin_Texas_F/n.jpg',
+        '/Austin_Texas_F/o.jpg',
+      ],
 
       owner: 'Bright Steven',
       title: 'Spacious Haven',
@@ -197,28 +187,26 @@ export class Pages {
       landMass: '4,852 sqft',
       details: '4 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinG: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_G/a.jpg',
-        imageB: '/Austin_Texas_G/b.jpg',
-        imageC: '/Austin_Texas_G/c.jpg',
-        imageD: '/Austin_Texas_G/d.jpg',
-        imageE: '/Austin_Texas_G/e.jpg',
-        imageF: '/Austin_Texas_G/f.jpg',
-        imageG: '/Austin_Texas_G/g.jpg',
-        imageH: '/Austin_Texas_G/h.jpg',
-        imageI: '/Austin_Texas_G/i.jpg',
-        imageJ: '/Austin_Texas_G/j.jpg',
-        imageK: '/Austin_Texas_G/k.jpg',
-        imageL: '/Austin_Texas_G/l.jpg',
-        imageM: '/Austin_Texas_G/m.jpg',
-        imageN: '/Austin_Texas_G/n.jpg',
-        imageO: '/Austin_Texas_G/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_G/a.jpg',
+        '/Austin_Texas_G/b.jpg',
+        '/Austin_Texas_G/c.jpg',
+        '/Austin_Texas_G/d.jpg',
+        '/Austin_Texas_G/e.jpg',
+        '/Austin_Texas_G/f.jpg',
+        '/Austin_Texas_G/g.jpg',
+        '/Austin_Texas_G/h.jpg',
+        '/Austin_Texas_G/i.jpg',
+        '/Austin_Texas_G/j.jpg',
+        '/Austin_Texas_G/k.jpg',
+        '/Austin_Texas_G/l.jpg',
+        '/Austin_Texas_G/m.jpg',
+        '/Austin_Texas_G/n.jpg',
+        '/Austin_Texas_G/o.jpg',
+      ],
 
       owner: 'George Albert',
       title: 'Joint Park',
@@ -228,28 +216,26 @@ export class Pages {
       landMass: '3,525 sqft',
       details: '3 beds, 2 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinH: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_H/a.jpg',
-        imageB: '/Austin_Texas_H/b.jpg',
-        imageC: '/Austin_Texas_H/c.jpg',
-        imageD: '/Austin_Texas_H/d.jpg',
-        imageE: '/Austin_Texas_H/e.jpg',
-        imageF: '/Austin_Texas_H/f.jpg',
-        imageG: '/Austin_Texas_H/g.jpg',
-        imageH: '/Austin_Texas_H/h.jpg',
-        imageI: '/Austin_Texas_H/i.jpg',
-        imageJ: '/Austin_Texas_H/j.jpg',
-        imageK: '/Austin_Texas_H/k.jpg',
-        imageL: '/Austin_Texas_H/l.jpg',
-        imageM: '/Austin_Texas_H/m.jpg',
-        imageN: '/Austin_Texas_H/n.jpg',
-        imageO: '/Austin_Texas_H/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_H/a.jpg',
+        '/Austin_Texas_H/b.jpg',
+        '/Austin_Texas_H/c.jpg',
+        '/Austin_Texas_H/d.jpg',
+        '/Austin_Texas_H/e.jpg',
+        '/Austin_Texas_H/f.jpg',
+        '/Austin_Texas_H/g.jpg',
+        '/Austin_Texas_H/h.jpg',
+        '/Austin_Texas_H/i.jpg',
+        '/Austin_Texas_H/j.jpg',
+        '/Austin_Texas_H/k.jpg',
+        '/Austin_Texas_H/l.jpg',
+        '/Austin_Texas_H/m.jpg',
+        '/Austin_Texas_H/n.jpg',
+        '/Austin_Texas_H/o.jpg',
+      ],
 
       owner: 'Bret Luw',
       title: 'Garden Sight',
@@ -259,28 +245,26 @@ export class Pages {
       landMass: '2,657 sqft',
       details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinI: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_I/a.jpg',
-        imageB: '/Austin_Texas_I/b.jpg',
-        imageC: '/Austin_Texas_I/c.jpg',
-        imageD: '/Austin_Texas_I/d.jpg',
-        imageE: '/Austin_Texas_I/e.jpg',
-        imageF: '/Austin_Texas_I/f.jpg',
-        imageG: '/Austin_Texas_I/g.jpg',
-        imageH: '/Austin_Texas_I/h.jpg',
-        imageI: '/Austin_Texas_I/i.jpg',
-        imageJ: '/Austin_Texas_I/j.jpg',
-        imageK: '/Austin_Texas_I/k.jpg',
-        imageL: '/Austin_Texas_I/l.jpg',
-        imageM: '/Austin_Texas_I/m.jpg',
-        imageN: '/Austin_Texas_I/n.jpg',
-        imageO: '/Austin_Texas_I/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_I/a.jpg',
+        '/Austin_Texas_I/b.jpg',
+        '/Austin_Texas_I/c.jpg',
+        '/Austin_Texas_I/d.jpg',
+        '/Austin_Texas_I/e.jpg',
+        '/Austin_Texas_I/f.jpg',
+        '/Austin_Texas_I/g.jpg',
+        '/Austin_Texas_I/h.jpg',
+        '/Austin_Texas_I/i.jpg',
+        '/Austin_Texas_I/j.jpg',
+        '/Austin_Texas_I/k.jpg',
+        '/Austin_Texas_I/l.jpg',
+        '/Austin_Texas_I/m.jpg',
+        '/Austin_Texas_I/n.jpg',
+        '/Austin_Texas_I/o.jpg',
+      ],
 
       owner: 'Johnson Muller',
       title: 'Spark Light',
@@ -290,28 +274,26 @@ export class Pages {
       landMass: '3,657 sqft',
       details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinJ: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_J/a.jpg',
-        imageB: '/Austin_Texas_J/b.jpg',
-        imageC: '/Austin_Texas_J/c.jpg',
-        imageD: '/Austin_Texas_J/d.jpg',
-        imageE: '/Austin_Texas_J/e.jpg',
-        imageF: '/Austin_Texas_J/f.jpg',
-        imageG: '/Austin_Texas_J/g.jpg',
-        imageH: '/Austin_Texas_J/h.jpg',
-        imageI: '/Austin_Texas_J/i.jpg',
-        imageJ: '/Austin_Texas_J/j.jpg',
-        imageK: '/Austin_Texas_J/k.jpg',
-        imageL: '/Austin_Texas_J/l.jpg',
-        imageM: '/Austin_Texas_J/m.jpg',
-        imageN: '/Austin_Texas_J/n.jpg',
-        imageO: '/Austin_Texas_J/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_J/a.jpg',
+        '/Austin_Texas_J/b.jpg',
+        '/Austin_Texas_J/c.jpg',
+        '/Austin_Texas_J/d.jpg',
+        '/Austin_Texas_J/e.jpg',
+        '/Austin_Texas_J/f.jpg',
+        '/Austin_Texas_J/g.jpg',
+        '/Austin_Texas_J/h.jpg',
+        '/Austin_Texas_J/i.jpg',
+        '/Austin_Texas_J/j.jpg',
+        '/Austin_Texas_J/k.jpg',
+        '/Austin_Texas_J/l.jpg',
+        '/Austin_Texas_J/m.jpg',
+        '/Austin_Texas_J/n.jpg',
+        '/Austin_Texas_J/o.jpg',
+      ],
 
       owner: 'Esther Clark',
       title: 'Classic Vile',
@@ -321,28 +303,26 @@ export class Pages {
       landMass: '4,232 sqft',
       details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinK: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_K/a.jpg',
-        imageB: '/Austin_Texas_K/b.jpg',
-        imageC: '/Austin_Texas_K/c.jpg',
-        imageD: '/Austin_Texas_K/d.jpg',
-        imageE: '/Austin_Texas_K/e.jpg',
-        imageF: '/Austin_Texas_K/f.jpg',
-        imageG: '/Austin_Texas_K/g.jpg',
-        imageH: '/Austin_Texas_K/h.jpg',
-        imageI: '/Austin_Texas_K/i.jpg',
-        imageJ: '/Austin_Texas_K/j.jpg',
-        imageK: '/Austin_Texas_K/k.jpg',
-        imageL: '/Austin_Texas_K/l.jpg',
-        imageM: '/Austin_Texas_K/m.jpg',
-        imageN: '/Austin_Texas_K/n.jpg',
-        imageO: '/Austin_Texas_K/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_K/a.jpg',
+        '/Austin_Texas_K/b.jpg',
+        '/Austin_Texas_K/c.jpg',
+        '/Austin_Texas_K/d.jpg',
+        '/Austin_Texas_K/e.jpg',
+        '/Austin_Texas_K/f.jpg',
+        '/Austin_Texas_K/g.jpg',
+        '/Austin_Texas_K/h.jpg',
+        '/Austin_Texas_K/i.jpg',
+        '/Austin_Texas_K/j.jpg',
+        '/Austin_Texas_K/k.jpg',
+        '/Austin_Texas_K/l.jpg',
+        '/Austin_Texas_K/m.jpg',
+        '/Austin_Texas_K/n.jpg',
+        '/Austin_Texas_K/o.jpg',
+      ],
 
       owner: 'Linda Murphy',
       title: 'City Hall',
@@ -352,28 +332,26 @@ export class Pages {
       landMass: '2,765 sqft',
       details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinL: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_L/a.jpg',
-        imageB: '/Austin_Texas_L/b.jpg',
-        imageC: '/Austin_Texas_L/c.jpg',
-        imageD: '/Austin_Texas_L/d.jpg',
-        imageE: '/Austin_Texas_L/e.jpg',
-        imageF: '/Austin_Texas_L/f.jpg',
-        imageG: '/Austin_Texas_L/g.jpg',
-        imageH: '/Austin_Texas_L/h.jpg',
-        imageI: '/Austin_Texas_L/i.jpg',
-        imageJ: '/Austin_Texas_L/j.jpg',
-        imageK: '/Austin_Texas_L/k.jpg',
-        imageL: '/Austin_Texas_L/l.jpg',
-        imageM: '/Austin_Texas_L/m.jpg',
-        imageN: '/Austin_Texas_L/n.jpg',
-        imageO: '/Austin_Texas_L/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_L/a.jpg',
+        '/Austin_Texas_L/b.jpg',
+        '/Austin_Texas_L/c.jpg',
+        '/Austin_Texas_L/d.jpg',
+        '/Austin_Texas_L/e.jpg',
+        '/Austin_Texas_L/f.jpg',
+        '/Austin_Texas_L/g.jpg',
+        '/Austin_Texas_L/h.jpg',
+        '/Austin_Texas_L/i.jpg',
+        '/Austin_Texas_L/j.jpg',
+        '/Austin_Texas_L/k.jpg',
+        '/Austin_Texas_L/l.jpg',
+        '/Austin_Texas_L/m.jpg',
+        '/Austin_Texas_L/n.jpg',
+        '/Austin_Texas_L/o.jpg',
+      ],
 
       owner: 'Samson George',
       title: 'Blissful Spark',
@@ -383,28 +361,26 @@ export class Pages {
       landMass: '2,336 sqft',
       details: '3 beds, 2 baths, Back garden',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinM: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_M/a.jpg',
-        imageB: '/Austin_Texas_M/b.jpg',
-        imageC: '/Austin_Texas_M/c.jpg',
-        imageD: '/Austin_Texas_M/d.jpg',
-        imageE: '/Austin_Texas_M/e.jpg',
-        imageF: '/Austin_Texas_M/f.jpg',
-        imageG: '/Austin_Texas_M/g.jpg',
-        imageH: '/Austin_Texas_M/h.jpg',
-        imageI: '/Austin_Texas_M/i.jpg',
-        imageJ: '/Austin_Texas_M/j.jpg',
-        imageK: '/Austin_Texas_M/k.jpg',
-        imageL: '/Austin_Texas_M/l.jpg',
-        imageM: '/Austin_Texas_M/m.jpg',
-        imageN: '/Austin_Texas_M/n.jpg',
-        imageO: '/Austin_Texas_M/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_M/a.jpg',
+        '/Austin_Texas_M/b.jpg',
+        '/Austin_Texas_M/c.jpg',
+        '/Austin_Texas_M/d.jpg',
+        '/Austin_Texas_M/e.jpg',
+        '/Austin_Texas_M/f.jpg',
+        '/Austin_Texas_M/g.jpg',
+        '/Austin_Texas_M/h.jpg',
+        '/Austin_Texas_M/i.jpg',
+        '/Austin_Texas_M/j.jpg',
+        '/Austin_Texas_M/k.jpg',
+        '/Austin_Texas_M/l.jpg',
+        '/Austin_Texas_M/m.jpg',
+        '/Austin_Texas_M/n.jpg',
+        '/Austin_Texas_M/o.jpg',
+      ],
 
       owner: 'Smith Oink',
       title: 'Modern Condo',
@@ -414,28 +390,25 @@ export class Pages {
       landMass: '2,132 sqft',
       details: '3 beds, 2 baths, Open field',
       showAllimages: false,
-    }
-  ]
-
-  austinN: any[] = [
+    },
     {
-      images: {
-        imageA: '/Austin_Texas_N/a.jpg',
-        imageB: '/Austin_Texas_N/b.jpg',
-        imageC: '/Austin_Texas_N/c.jpg',
-        imageD: '/Austin_Texas_N/d.jpg',
-        imageE: '/Austin_Texas_N/e.jpg',
-        imageF: '/Austin_Texas_N/f.jpg',
-        imageG: '/Austin_Texas_N/g.jpg',
-        imageH: '/Austin_Texas_N/h.jpg',
-        imageI: '/Austin_Texas_N/i.jpg',
-        imageJ: '/Austin_Texas_N/j.jpg',
-        imageK: '/Austin_Texas_N/k.jpg',
-        imageL: '/Austin_Texas_N/l.jpg',
-        imageM: '/Austin_Texas_N/m.jpg',
-        imageN: '/Austin_Texas_N/n.jpg',
-        imageO: '/Austin_Texas_N/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_N/a.jpg',
+        '/Austin_Texas_N/b.jpg',
+        '/Austin_Texas_N/c.jpg',
+        '/Austin_Texas_N/d.jpg',
+        '/Austin_Texas_N/e.jpg',
+        '/Austin_Texas_N/f.jpg',
+        '/Austin_Texas_N/g.jpg',
+        '/Austin_Texas_N/h.jpg',
+        '/Austin_Texas_N/i.jpg',
+        '/Austin_Texas_N/j.jpg',
+        '/Austin_Texas_N/k.jpg',
+        '/Austin_Texas_N/l.jpg',
+        '/Austin_Texas_N/m.jpg',
+        '/Austin_Texas_N/n.jpg',
+        '/Austin_Texas_N/o.jpg',
+      ],
 
       owner: 'Kendrick Chen',
       title: 'Spacious Lava',
@@ -445,28 +418,26 @@ export class Pages {
       landMass: '1,986 sqft',
       details: '3 beds, 2 baths, Resting park',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinO: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_O/a.jpg',
-        imageB: '/Austin_Texas_O/b.jpg',
-        imageC: '/Austin_Texas_O/c.jpg',
-        imageD: '/Austin_Texas_O/d.jpg',
-        imageE: '/Austin_Texas_O/e.jpg',
-        imageF: '/Austin_Texas_O/f.jpg',
-        imageG: '/Austin_Texas_O/g.jpg',
-        imageH: '/Austin_Texas_O/h.jpg',
-        imageI: '/Austin_Texas_O/i.jpg',
-        imageJ: '/Austin_Texas_O/j.jpg',
-        imageK: '/Austin_Texas_O/k.jpg',
-        imageL: '/Austin_Texas_O/l.jpg',
-        imageM: '/Austin_Texas_O/m.jpg',
-        imageN: '/Austin_Texas_O/n.jpg',
-        imageO: '/Austin_Texas_O/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_O/a.jpg',
+        '/Austin_Texas_O/b.jpg',
+        '/Austin_Texas_O/c.jpg',
+        '/Austin_Texas_O/d.jpg',
+        '/Austin_Texas_O/e.jpg',
+        '/Austin_Texas_O/f.jpg',
+        '/Austin_Texas_O/g.jpg',
+        '/Austin_Texas_O/h.jpg',
+        '/Austin_Texas_O/i.jpg',
+        '/Austin_Texas_O/j.jpg',
+        '/Austin_Texas_O/k.jpg',
+        '/Austin_Texas_O/l.jpg',
+        '/Austin_Texas_O/m.jpg',
+        '/Austin_Texas_O/n.jpg',
+        '/Austin_Texas_O/o.jpg',
+      ],
 
       owner: 'Kevin White',
       title: 'Glorious Park',
@@ -476,28 +447,26 @@ export class Pages {
       landMass: '4,883 sqft',
       details: '4 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinP: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_P/a.jpg',
-        imageB: '/Austin_Texas_P/b.jpg',
-        imageC: '/Austin_Texas_P/c.jpg',
-        imageD: '/Austin_Texas_P/d.jpg',
-        imageE: '/Austin_Texas_P/e.jpg',
-        imageF: '/Austin_Texas_P/f.jpg',
-        imageG: '/Austin_Texas_P/g.jpg',
-        imageH: '/Austin_Texas_P/h.jpg',
-        imageI: '/Austin_Texas_P/i.jpg',
-        imageJ: '/Austin_Texas_P/j.jpg',
-        imageK: '/Austin_Texas_P/k.jpg',
-        imageL: '/Austin_Texas_P/l.jpg',
-        imageM: '/Austin_Texas_P/m.jpg',
-        imageN: '/Austin_Texas_P/n.jpg',
-        imageO: '/Austin_Texas_P/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_P/a.jpg',
+        '/Austin_Texas_P/b.jpg',
+        '/Austin_Texas_P/c.jpg',
+        '/Austin_Texas_P/d.jpg',
+        '/Austin_Texas_P/e.jpg',
+        '/Austin_Texas_P/f.jpg',
+        '/Austin_Texas_P/g.jpg',
+        '/Austin_Texas_P/h.jpg',
+        '/Austin_Texas_P/i.jpg',
+        '/Austin_Texas_P/j.jpg',
+        '/Austin_Texas_P/k.jpg',
+        '/Austin_Texas_P/l.jpg',
+        '/Austin_Texas_P/m.jpg',
+        '/Austin_Texas_P/n.jpg',
+        '/Austin_Texas_P/o.jpg',
+      ],
 
       owner: 'Nicholas Taylor',
       title: 'Bliss Home',
@@ -507,28 +476,26 @@ export class Pages {
       landMass: '2,737 sqft',
       details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinQ: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_Q/a.jpg',
-        imageB: '/Austin_Texas_Q/b.jpg',
-        imageC: '/Austin_Texas_Q/c.jpg',
-        imageD: '/Austin_Texas_Q/d.jpg',
-        imageE: '/Austin_Texas_Q/e.jpg',
-        imageF: '/Austin_Texas_Q/f.jpg',
-        imageG: '/Austin_Texas_Q/g.jpg',
-        imageH: '/Austin_Texas_Q/h.jpg',
-        imageI: '/Austin_Texas_Q/i.jpg',
-        imageJ: '/Austin_Texas_Q/j.jpg',
-        imageK: '/Austin_Texas_Q/k.jpg',
-        imageL: '/Austin_Texas_Q/l.jpg',
-        imageM: '/Austin_Texas_Q/m.jpg',
-        imageN: '/Austin_Texas_Q/n.jpg',
-        imageO: '/Austin_Texas_Q/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_Q/a.jpg',
+        '/Austin_Texas_Q/b.jpg',
+        '/Austin_Texas_Q/c.jpg',
+        '/Austin_Texas_Q/d.jpg',
+        '/Austin_Texas_Q/e.jpg',
+        '/Austin_Texas_Q/f.jpg',
+        '/Austin_Texas_Q/g.jpg',
+        '/Austin_Texas_Q/h.jpg',
+        '/Austin_Texas_Q/i.jpg',
+        '/Austin_Texas_Q/j.jpg',
+        '/Austin_Texas_Q/k.jpg',
+        '/Austin_Texas_Q/l.jpg',
+        '/Austin_Texas_Q/m.jpg',
+        '/Austin_Texas_Q/n.jpg',
+        '/Austin_Texas_Q/o.jpg',
+      ],
 
       owner: 'Christopher Martinez',
       title: 'Spring Boot',
@@ -538,28 +505,26 @@ export class Pages {
       landMass: '4,821 sqft',
       details: '4 beds, 3 baths, Open Field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinR: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_R/a.jpg',
-        imageB: '/Austin_Texas_R/b.jpg',
-        imageC: '/Austin_Texas_R/c.jpg',
-        imageD: '/Austin_Texas_R/d.jpg',
-        imageE: '/Austin_Texas_R/e.jpg',
-        imageF: '/Austin_Texas_R/f.jpg',
-        imageG: '/Austin_Texas_R/g.jpg',
-        imageH: '/Austin_Texas_R/h.jpg',
-        imageI: '/Austin_Texas_R/i.jpg',
-        imageJ: '/Austin_Texas_R/j.jpg',
-        imageK: '/Austin_Texas_R/k.jpg',
-        imageL: '/Austin_Texas_R/l.jpg',
-        imageM: '/Austin_Texas_R/m.jpg',
-        imageN: '/Austin_Texas_R/n.jpg',
-        imageO: '/Austin_Texas_R/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_R/a.jpg',
+        '/Austin_Texas_R/b.jpg',
+        '/Austin_Texas_R/c.jpg',
+        '/Austin_Texas_R/d.jpg',
+        '/Austin_Texas_R/e.jpg',
+        '/Austin_Texas_R/f.jpg',
+        '/Austin_Texas_R/g.jpg',
+        '/Austin_Texas_R/h.jpg',
+        '/Austin_Texas_R/i.jpg',
+        '/Austin_Texas_R/j.jpg',
+        '/Austin_Texas_R/k.jpg',
+        '/Austin_Texas_R/l.jpg',
+        '/Austin_Texas_R/m.jpg',
+        '/Austin_Texas_R/n.jpg',
+        '/Austin_Texas_R/o.jpg',
+      ],
 
       owner: 'Emily Davis',
       title: 'Spacious INN',
@@ -569,28 +534,26 @@ export class Pages {
       landMass: '5,214 sqft',
       details: '4 beds, 4 baths, Open field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinS: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_S/a.jpg',
-        imageB: '/Austin_Texas_S/b.jpg',
-        imageC: '/Austin_Texas_S/c.jpg',
-        imageD: '/Austin_Texas_S/d.jpg',
-        imageE: '/Austin_Texas_S/e.jpg',
-        imageF: '/Austin_Texas_S/f.jpg',
-        imageG: '/Austin_Texas_S/g.jpg',
-        imageH: '/Austin_Texas_S/h.jpg',
-        imageI: '/Austin_Texas_S/i.jpg',
-        imageJ: '/Austin_Texas_S/j.jpg',
-        imageK: '/Austin_Texas_S/k.jpg',
-        imageL: '/Austin_Texas_S/l.jpg',
-        imageM: '/Austin_Texas_S/m.jpg',
-        imageN: '/Austin_Texas_S/n.jpg',
-        imageO: '/Austin_Texas_S/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_S/a.jpg',
+        '/Austin_Texas_S/b.jpg',
+        '/Austin_Texas_S/c.jpg',
+        '/Austin_Texas_S/d.jpg',
+        '/Austin_Texas_S/e.jpg',
+        '/Austin_Texas_S/f.jpg',
+        '/Austin_Texas_S/g.jpg',
+        '/Austin_Texas_S/h.jpg',
+        '/Austin_Texas_S/i.jpg',
+        '/Austin_Texas_S/j.jpg',
+        '/Austin_Texas_S/k.jpg',
+        '/Austin_Texas_S/l.jpg',
+        '/Austin_Texas_S/m.jpg',
+        '/Austin_Texas_S/n.jpg',
+        '/Austin_Texas_S/o.jpg',
+      ],
 
       owner: 'Saul Nicolas',
       title: 'Modern Have',
@@ -600,28 +563,26 @@ export class Pages {
       landMass: '2,893 sqft',
       details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinT: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_T/a.jpg',
-        imageB: '/Austin_Texas_T/b.jpg',
-        imageC: '/Austin_Texas_T/c.jpg',
-        imageD: '/Austin_Texas_T/d.jpg',
-        imageE: '/Austin_Texas_T/e.jpg',
-        imageF: '/Austin_Texas_T/f.jpg',
-        imageG: '/Austin_Texas_T/g.jpg',
-        imageH: '/Austin_Texas_T/h.jpg',
-        imageI: '/Austin_Texas_T/i.jpg',
-        imageJ: '/Austin_Texas_T/j.jpg',
-        imageK: '/Austin_Texas_T/k.jpg',
-        imageL: '/Austin_Texas_T/l.jpg',
-        imageM: '/Austin_Texas_T/m.jpg',
-        imageN: '/Austin_Texas_T/n.jpg',
-        imageO: '/Austin_Texas_T/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_T/a.jpg',
+        '/Austin_Texas_T/b.jpg',
+        '/Austin_Texas_T/c.jpg',
+        '/Austin_Texas_T/d.jpg',
+        '/Austin_Texas_T/e.jpg',
+        '/Austin_Texas_T/f.jpg',
+        '/Austin_Texas_T/g.jpg',
+        '/Austin_Texas_T/h.jpg',
+        '/Austin_Texas_T/i.jpg',
+        '/Austin_Texas_T/j.jpg',
+        '/Austin_Texas_T/k.jpg',
+        '/Austin_Texas_T/l.jpg',
+        '/Austin_Texas_T/m.jpg',
+        '/Austin_Texas_T/n.jpg',
+        '/Austin_Texas_T/o.jpg',
+      ],
 
       owner: 'Samuel Hall',
       title: 'Entertainment Park',
@@ -631,28 +592,26 @@ export class Pages {
       landMass: '3,212 sqft',
       details: '4 beds, 4 baths, Open field & Garden',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinU: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_U/a.jpg',
-        imageB: '/Austin_Texas_U/b.jpg',
-        imageC: '/Austin_Texas_U/c.jpg',
-        imageD: '/Austin_Texas_U/d.jpg',
-        imageE: '/Austin_Texas_U/e.jpg',
-        imageF: '/Austin_Texas_U/f.jpg',
-        imageG: '/Austin_Texas_U/g.jpg',
-        imageH: '/Austin_Texas_U/h.jpg',
-        imageI: '/Austin_Texas_U/i.jpg',
-        imageJ: '/Austin_Texas_U/j.jpg',
-        imageK: '/Austin_Texas_U/k.jpg',
-        imageL: '/Austin_Texas_U/l.jpg',
-        imageM: '/Austin_Texas_U/m.jpg',
-        imageN: '/Austin_Texas_U/n.jpg',
-        imageO: '/Austin_Texas_U/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_U/a.jpg',
+        '/Austin_Texas_U/b.jpg',
+        '/Austin_Texas_U/c.jpg',
+        '/Austin_Texas_U/d.jpg',
+        '/Austin_Texas_U/e.jpg',
+        '/Austin_Texas_U/f.jpg',
+        '/Austin_Texas_U/g.jpg',
+        '/Austin_Texas_U/h.jpg',
+        '/Austin_Texas_U/i.jpg',
+        '/Austin_Texas_U/j.jpg',
+        '/Austin_Texas_U/k.jpg',
+        '/Austin_Texas_U/l.jpg',
+        '/Austin_Texas_U/m.jpg',
+        '/Austin_Texas_U/n.jpg',
+        '/Austin_Texas_U/o.jpg',
+      ],
 
       owner: 'Kes Smart',
       title: 'District Have',
@@ -662,28 +621,26 @@ export class Pages {
       landMass: '2,429, sqft',
       details: '3 beds, 3 baths, Back Field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinV: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_V/a.jpg',
-        imageB: '/Austin_Texas_V/b.jpg',
-        imageC: '/Austin_Texas_V/c.jpg',
-        imageD: '/Austin_Texas_V/d.jpg',
-        imageE: '/Austin_Texas_V/e.jpg',
-        imageF: '/Austin_Texas_V/f.jpg',
-        imageG: '/Austin_Texas_V/g.jpg',
-        imageH: '/Austin_Texas_V/h.jpg',
-        imageI: '/Austin_Texas_V/i.jpg',
-        imageJ: '/Austin_Texas_V/j.jpg',
-        imageK: '/Austin_Texas_V/k.jpg',
-        imageL: '/Austin_Texas_V/l.jpg',
-        imageM: '/Austin_Texas_V/m.jpg',
-        imageN: '/Austin_Texas_V/n.jpg',
-        imageO: '/Austin_Texas_V/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_V/a.jpg',
+        '/Austin_Texas_V/b.jpg',
+        '/Austin_Texas_V/c.jpg',
+        '/Austin_Texas_V/d.jpg',
+        '/Austin_Texas_V/e.jpg',
+        '/Austin_Texas_V/f.jpg',
+        '/Austin_Texas_V/g.jpg',
+        '/Austin_Texas_V/h.jpg',
+        '/Austin_Texas_V/i.jpg',
+        '/Austin_Texas_V/j.jpg',
+        '/Austin_Texas_V/k.jpg',
+        '/Austin_Texas_V/l.jpg',
+        '/Austin_Texas_V/m.jpg',
+        '/Austin_Texas_V/n.jpg',
+        '/Austin_Texas_V/o.jpg',
+      ],
 
       owner: 'Matthew Simpson',
       title: 'Villa Ice',
@@ -693,28 +650,26 @@ export class Pages {
       landMass: '3,865, sqft',
       details: '3 beds, 3 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinW: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_W/a.jpg',
-        imageB: '/Austin_Texas_W/b.jpg',
-        imageC: '/Austin_Texas_W/c.jpg',
-        imageD: '/Austin_Texas_W/d.jpg',
-        imageE: '/Austin_Texas_W/e.jpg',
-        imageF: '/Austin_Texas_W/f.jpg',
-        imageG: '/Austin_Texas_W/g.jpg',
-        imageH: '/Austin_Texas_W/h.jpg',
-        imageI: '/Austin_Texas_W/i.jpg',
-        imageJ: '/Austin_Texas_W/j.jpg',
-        imageK: '/Austin_Texas_W/k.jpg',
-        imageL: '/Austin_Texas_W/l.jpg',
-        imageM: '/Austin_Texas_W/m.jpg',
-        imageN: '/Austin_Texas_W/n.jpg',
-        imageO: '/Austin_Texas_W/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_W/a.jpg',
+        '/Austin_Texas_W/b.jpg',
+        '/Austin_Texas_W/c.jpg',
+        '/Austin_Texas_W/d.jpg',
+        '/Austin_Texas_W/e.jpg',
+        '/Austin_Texas_W/f.jpg',
+        '/Austin_Texas_W/g.jpg',
+        '/Austin_Texas_W/h.jpg',
+        '/Austin_Texas_W/i.jpg',
+        '/Austin_Texas_W/j.jpg',
+        '/Austin_Texas_W/k.jpg',
+        '/Austin_Texas_W/l.jpg',
+        '/Austin_Texas_W/m.jpg',
+        '/Austin_Texas_W/n.jpg',
+        '/Austin_Texas_W/o.jpg',
+      ],
 
       owner: 'Steve Neptune',
       title: 'Mill Spark',
@@ -724,28 +679,26 @@ export class Pages {
       landMass: '2,988, sqft',
       details: '3 beds, 2 baths, Open Field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinX: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_X/a.jpg',
-        imageB: '/Austin_Texas_X/b.jpg',
-        imageC: '/Austin_Texas_X/c.jpg',
-        imageD: '/Austin_Texas_X/d.jpg',
-        imageE: '/Austin_Texas_X/e.jpg',
-        imageF: '/Austin_Texas_X/f.jpg',
-        imageG: '/Austin_Texas_X/g.jpg',
-        imageH: '/Austin_Texas_X/h.jpg',
-        imageI: '/Austin_Texas_X/i.jpg',
-        imageJ: '/Austin_Texas_X/j.jpg',
-        imageK: '/Austin_Texas_X/k.jpg',
-        imageL: '/Austin_Texas_X/l.jpg',
-        imageM: '/Austin_Texas_X/m.jpg',
-        imageN: '/Austin_Texas_X/n.jpg',
-        imageO: '/Austin_Texas_X/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_X/a.jpg',
+        '/Austin_Texas_X/b.jpg',
+        '/Austin_Texas_X/c.jpg',
+        '/Austin_Texas_X/d.jpg',
+        '/Austin_Texas_X/e.jpg',
+        '/Austin_Texas_X/f.jpg',
+        '/Austin_Texas_X/g.jpg',
+        '/Austin_Texas_X/h.jpg',
+        '/Austin_Texas_X/i.jpg',
+        '/Austin_Texas_X/j.jpg',
+        '/Austin_Texas_X/k.jpg',
+        '/Austin_Texas_X/l.jpg',
+        '/Austin_Texas_X/m.jpg',
+        '/Austin_Texas_X/n.jpg',
+        '/Austin_Texas_X/o.jpg',
+      ],
 
       owner: 'Josh Marine',
       title: 'Eve Mill',
@@ -755,28 +708,26 @@ export class Pages {
       landMass: '3,755, sqft',
       details: '3 beds, 2 baths, Open field',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinY: any[] = [
     {
-      images: {
-        imageA: '/Austin_Texas_Y/a.jpg',
-        imageB: '/Austin_Texas_Y/b.jpg',
-        imageC: '/Austin_Texas_Y/c.jpg',
-        imageD: '/Austin_Texas_Y/d.jpg',
-        imageE: '/Austin_Texas_Y/e.jpg',
-        imageF: '/Austin_Texas_Y/f.jpg',
-        imageG: '/Austin_Texas_Y/g.jpg',
-        imageH: '/Austin_Texas_Y/h.jpg',
-        imageI: '/Austin_Texas_Y/i.jpg',
-        imageJ: '/Austin_Texas_Y/j.jpg',
-        imageK: '/Austin_Texas_Y/k.jpg',
-        imageL: '/Austin_Texas_Y/l.jpg',
-        imageM: '/Austin_Texas_Y/m.jpg',
-        imageN: '/Austin_Texas_Y/n.jpg',
-        imageO: '/Austin_Texas_Y/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_Y/a.jpg',
+        '/Austin_Texas_Y/b.jpg',
+        '/Austin_Texas_Y/c.jpg',
+        '/Austin_Texas_Y/d.jpg',
+        '/Austin_Texas_Y/e.jpg',
+        '/Austin_Texas_Y/f.jpg',
+        '/Austin_Texas_Y/g.jpg',
+        '/Austin_Texas_Y/h.jpg',
+        '/Austin_Texas_Y/i.jpg',
+        '/Austin_Texas_Y/j.jpg',
+        '/Austin_Texas_Y/k.jpg',
+        '/Austin_Texas_Y/l.jpg',
+        '/Austin_Texas_Y/m.jpg',
+        '/Austin_Texas_Y/n.jpg',
+        '/Austin_Texas_Y/o.jpg',
+      ],
 
       owner: 'George Alvin',
       title: 'Main Strict',
@@ -786,28 +737,27 @@ export class Pages {
       landMass: '3,265, sqft',
       details: '4 beds, 4 baths, swimming pool',
       showAllimages: false,
-    }
-  ]
+    },
 
-  austinZ: any[] = [
+
     {
-      images: {
-        imageA: '/Austin_Texas_Z/a.jpg',
-        imageB: '/Austin_Texas_Z/b.jpg',
-        imageC: '/Austin_Texas_Z/c.jpg',
-        imageD: '/Austin_Texas_Z/d.jpg',
-        imageE: '/Austin_Texas_Z/e.jpg',
-        imageF: '/Austin_Texas_Z/f.jpg',
-        imageG: '/Austin_Texas_Z/g.jpg',
-        imageH: '/Austin_Texas_Z/h.jpg',
-        imageI: '/Austin_Texas_Z/i.jpg',
-        imageJ: '/Austin_Texas_Z/j.jpg',
-        imageK: '/Austin_Texas_Z/k.jpg',
-        imageL: '/Austin_Texas_Z/l.jpg',
-        imageM: '/Austin_Texas_Z/m.jpg',
-        imageN: '/Austin_Texas_Z/n.jpg',
-        imageO: '/Austin_Texas_Z/o.jpg',
-      },
+      images: [
+        '/Austin_Texas_Z/a.jpg',
+        '/Austin_Texas_Z/b.jpg',
+        '/Austin_Texas_Z/c.jpg',
+        '/Austin_Texas_Z/d.jpg',
+        '/Austin_Texas_Z/e.jpg',
+        '/Austin_Texas_Z/f.jpg',
+        '/Austin_Texas_Z/g.jpg',
+        '/Austin_Texas_Z/h.jpg',
+        '/Austin_Texas_Z/i.jpg',
+        '/Austin_Texas_Z/j.jpg',
+        '/Austin_Texas_Z/k.jpg',
+        '/Austin_Texas_Z/l.jpg',
+        '/Austin_Texas_Z/m.jpg',
+        '/Austin_Texas_Z/n.jpg',
+        '/Austin_Texas_Z/o.jpg',
+      ],
 
       owner: 'Bose Andre',
       title: 'Modern Haven',
@@ -821,37 +771,33 @@ export class Pages {
   ]
 
   // function to view more images
+  trackHouse(index: number, house: any) {
+    return house.title; // ensures stable tracking
+  }
+
   toggleImages(house: any) {
     house.showAllimages = !house.showAllimages;
   }
 
+  scrollLeft(event: Event) {
+    const button = event.target as HTMLElement;
+    const container = button.nextElementSibling as HTMLElement;
+    if (container) {
+      container.scrollBy({ left: -250, behavior: 'smooth' });
+    }
+  }
+
+  scrollRight(event: Event) {
+    const button = event.target as HTMLElement;
+    const container = button.previousElementSibling as HTMLElement;
+    if (container) {
+      container.scrollBy({ left: 250, behavior: 'smooth' });
+    }
+  }
+
+  //Search function for the houses
   allHouses: any[] = [
-    this.austinA,
-    this.austinB,
-    this.austinC,
-    this.austinD,
-    this.austinE,
-    this.austinF,
-    this.austinG,
-    this.austinH,
-    this.austinI,
-    this.austinJ,
-    this.austinK,
-    this.austinL,
-    this.austinM,
-    this.austinN,
-    this.austinO,
-    this.austinP,
-    this.austinQ,
-    this.austinR,
-    this.austinS,
-    this.austinT,
-    this.austinU,
-    this.austinV,
-    this.austinW,
-    this.austinX,
-    this.austinY,
-    this.austinZ,
+    this.houses,
   ]
 
   searchTerm: string = '';

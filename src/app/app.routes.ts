@@ -16,7 +16,7 @@ import { Page5 } from './pages/page5/page5';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    
+
     { path: 'home', component: Home },
 
     { path: 'contact', component: Contact },
