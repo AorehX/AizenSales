@@ -1,1 +1,24 @@
-<p>services works!</p>
+<div class="container">
+  <div class="aboutServicePage">
+    <div class="serviceInfo">
+      <h1>{{ headerH1 }}</h1>
+      <h3>{{ headerH3 }}</h3>
+      <p>{{ aboutParagraph }}</p>
+    </div>
+  </div>
+
+  <div class="team-container">
+    <div class="teamCardB">
+      @for (agent of agents; track trackAgents($index, agent)) {
+        <div class="image-container">
+          <img ngSrc="{{agent.agent[0]}}" alt="" width="350" height="310">
+          <div class="teamCardInfo">
+            <p>Name: <strong>{{ agent.name }}</strong></p>
+            <p>Info: {{ agent.info }}</p>
+            <p>Mail: {{ agent.mail }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

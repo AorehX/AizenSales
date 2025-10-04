@@ -1,10 +1,9 @@
-* {
-  scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+//* {
+//  scroll-behavior: smooth;
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//}
 
 .search-items {
   display: flex;
@@ -108,7 +107,6 @@
   }
 }
 
-
 .site-info {
   display: flex;
   align-items: center;
@@ -118,14 +116,12 @@
     display: block;
     width: 75vw;
     height: auto;
-
   }
 
   .home-text {
     h2 {
-      margin: 10px;
       padding: 8px;
-      margin-bottom: 10px;
+      margin: 10px;
       text-align: center;
     }
   }
@@ -155,7 +151,6 @@
   width: 320px;
   height: 350px;
   text-align: center;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
   form {
@@ -186,10 +181,9 @@
     border: none;
     background-color: blue;
     color: #fff;
-    font-size: 25px;
-    width: 110px;
+    font-size: 18px;
+    width: 80px;
     height: auto;
-    border: none;
   }
 
   button:hover {
@@ -223,8 +217,8 @@
     margin: 10px;
     background-color: blue;
     color: #fff;
-    font-size: 25px;
-    width: 120px;
+    font-size: 18px;
+    width: 80px;
     height: auto;
     border: none;
   }
@@ -261,11 +255,10 @@
   }
 }
 
-
 .sample-intro {
   gap: 10px;
   display: flex;
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
   align-items: center;
   align-content: center;
@@ -278,6 +271,8 @@
 .price-container {
   display: flex;
   margin: 10px;
+  padding: 5px;
+  width: 100%;
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -288,18 +283,31 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 20px;
     max-width: 600px;
   }
 }
-
 
 .mini-container {
   display: flex;
   gap: 40px;
   align-items: center;
   align-content: center;
+}
+
+.sample-price {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.sample-price-2 {
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .sample-container {
@@ -332,7 +340,6 @@
     cursor: pointer;
   }
 }
-
 
 .sample-image-containers {
   display: flex;
@@ -415,7 +422,6 @@
 @media (max-width: 480px) {
   .hero-section {
     background-image: url('https://res.cloudinary.com/zone0/image/upload/hero-otc_dstalz.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
     height: auto;
   }
@@ -423,13 +429,8 @@
   .company-name {
     margin-bottom: 10px;
 
-    h3 {
-      color: blueviolet;
-    }
-
     h2 {
-      font-size: 30px;
-      color: lightblue;
+      font-size: 20px;
     }
 
     span {
@@ -502,19 +503,14 @@
       background-repeat: no-repeat;
       height: auto;
     }
-  
+
     .company-name {
       margin-bottom: 10px;
-  
-      h3 {
-        color: blueviolet;
-      }
-  
+
       h2 {
-        font-size: 30px;
-        color: lightblue;
+        font-size: 20px;
       }
-  
+
       span {
         color: #ffffff;
       }
@@ -574,19 +570,14 @@
       background-repeat: no-repeat;
       height: auto;
     }
-  
+
     .company-name {
       margin-bottom: 10px;
-  
-      h3 {
-        color: blueviolet;
-      }
-  
+
       h2 {
-        font-size: 30px;
-        color: lightblue;
+        font-size: 20px;
       }
-  
+
       span {
         color: #ffffff;
       }
